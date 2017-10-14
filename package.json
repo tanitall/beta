@@ -1,6 +1,6 @@
 {
   "name": "Morpheus",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "main": "./main.js",
   "description": "Wallet for NEO blockchain",
   "author": "© Blockchain Digital Services",
