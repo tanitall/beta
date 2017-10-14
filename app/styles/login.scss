@@ -1,0 +1,41 @@
+#login {
+  padding-top: 50px;
+  h1 {
+    font-size: 46px;
+    font-weight: 100;
+    margin-top: -5px;
+    font-weight: lighter !important;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #9b9b9b;
+    text-align: center;
+    font-size: 36px;
+    font-weight: lighter;
+  }
+  .trans-form {
+    margin-top: 50px;
+  }
+  .btn {
+    background-color: transparent !important;
+    :hover {
+      background-color: transparent;
+    }
+  }
+
+  .info {
+    font-weight: lighter;
+  }
+  .icon-bar {
+    margin-top: 80px;
+  }
+  .footer-info {
+    margin-top: 30px;
+    line-height: 1;
+    color: #4a4a4a;
+    text-align: center;
+    p {
+      font-size: 14px;
+    }
+  }
+}

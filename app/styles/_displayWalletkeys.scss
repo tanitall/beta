@@ -1,0 +1,120 @@
+#displayWalletKeys {
+  h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  p.welcome {
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    font-size: 20px;
+  }
+
+  .btn-blue {
+    // padding: 10px 8px;
+  }
+
+  .btn-export {
+    // padding: 10px 8px;
+  }
+
+  #buttons {
+    .col-xs-3 {
+      width: auto;
+    }
+  }
+
+  .key-label {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  input.pubicAddress {
+    color: #7ed321 !important;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .disclaimer {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-align: center;
+  }
+
+  .form-control {
+    height: 42px;
+  }
+
+  .addressBox {
+    border: 10px solid #d3d3d3;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 4px 0 10px;
+  }
+
+  .receive-qr-bk {
+    background: url("../img/qr-bk@3x.png") no-repeat center;
+    width: 200px;
+    height: 200px;
+    /* margin: 30px auto 0; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 10px;
+  }
+
+  .pull-left {
+    margin-bottom: 30px;
+  }
+}
+
+#privateKeys {
+  .pull-left {
+    margin-bottom: 30px;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+  }
+  .btn-red {
+    width: 100%;
+  }
+  input {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .form-control {
+    height: 42px;
+  }
+
+  .key-label {
+    font-weight: lighter;
+    font-size: 18px;
+  }
+
+  .keyList {
+    margin-bottom: 15px;
+  }
+}
+
+input.pubicAddress {
+  color: #7ed321 !important;
+}
+
+.saveKey {
+  border-color: #6972d5;
+  border-radius: 6px;
+}

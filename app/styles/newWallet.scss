@@ -1,0 +1,42 @@
+#newWallet {
+  padding-top: 30px;
+  h1 {
+    font-size: 48px;
+    font-weight: 100;
+    font-weight: lighter !important;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #9b9b9b;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 50px;
+  }
+
+  .btn {
+    background-color: transparent !important;
+    :hover {
+      background-color: transparent;
+    }
+  }
+  input {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .info {
+    font-weight: lighter;
+  }
+  .inputs {
+    margin-top: 30px;
+  }
+  .icon-bar {
+    margin-top: 100px;
+  }
+  .go-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 45px;
+  }
+}

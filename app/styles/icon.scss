@@ -1,0 +1,52 @@
+.icon-cell {
+  float: left;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 4px;
+  opacity: 0.25;
+}
+
+.icon-cell:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.new-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/new-icon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.lock-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/lock-icon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.upload-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/upload-icon.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.icon-bar {
+  width: 324px;
+  margin: 0px auto;
+}

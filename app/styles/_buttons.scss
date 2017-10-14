@@ -1,0 +1,208 @@
+.btn {
+  padding: 10px 22px;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  border: 0;
+}
+
+.btn-send {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 0;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  color: #000;
+  background: rgb(143, 196, 0);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(143, 196, 0, 1) 0%,
+    rgba(87, 181, 0, 1) 100%
+  );
+}
+
+.btn-send-gas {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 0;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  color: #000;
+  background: rgb(203, 96, 179);
+  background: linear-gradient(
+    to bottom,
+    rgba(203, 96, 179, 1) 0%,
+    rgba(104, 34, 165, 1) 0%,
+    rgba(104, 3, 120, 1) 99%
+  );
+}
+
+.btn-export {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 0;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  color: #000;
+  background: rgb(250, 217, 97);
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 217, 97, 1) 0%,
+    rgba(247, 107, 28, 1) 92%
+  );
+}
+
+.btn-receive {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 0;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  color: #000;
+  background: rgb(64, 150, 238);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(64, 150, 238, 1) 0%,
+    rgba(0, 118, 237, 1) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(64, 150, 238, 1) 0%,
+    rgba(0, 118, 237, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(64, 150, 238, 1) 0%,
+    rgba(0, 118, 237, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.btn-blue {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 0;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  color: #000;
+  background: rgb(36, 180, 245);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(36, 180, 245, 1) 0%,
+    rgba(0, 32, 228, 1) 92%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(36, 180, 245, 1) 0%,
+    rgba(0, 32, 228, 1) 92%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 180, 245, 1) 0%,
+    rgba(0, 32, 228, 1) 92%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.btn-red {
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 0;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  color: #646464;
+  border-radius: 6px;
+  color: #fff;
+  background: rgb(169, 3, 41);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(169, 3, 41, 1) 0%,
+    rgba(143, 2, 34, 1) 44%,
+    rgba(94, 0, 14, 1) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(169, 3, 41, 1) 0%,
+    rgba(143, 2, 34, 1) 44%,
+    rgba(94, 0, 14, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(169, 3, 41, 1) 0%,
+    rgba(143, 2, 34, 1) 44%,
+    rgba(94, 0, 14, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.btn-send:hover,
+.btn-send-gas:hover,
+.btn-receive:hover,
+.btn-export:hover,
+.btn-blue:hover {
+  color: #fff;
+}
+
+.btn:hover {
+  color: #ececec;
+  background: rgb(64, 150, 238);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(64, 150, 238, 1) 0%,
+    rgba(0, 118, 237, 1) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(64, 150, 238, 1) 0%,
+    rgba(0, 118, 237, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(64, 150, 238, 1) 0%,
+    rgba(0, 118, 237, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.go-icon {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../img/right-arrow@3x.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.go-icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}

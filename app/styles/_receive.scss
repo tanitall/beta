@@ -1,0 +1,63 @@
+#receive {
+  width: 749px;
+  position: absolute;
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: -100px;
+  }
+  .container {
+  }
+
+  .addressBox-send {
+    margin-left: 18px;
+  }
+
+  .header {
+    background-color: #212121;
+    border-radius: 100px;
+    height: 100px;
+  }
+  .neo-text {
+    font-size: 36px;
+    font-weight: bold;
+    span {
+      color: #7ed321;
+    }
+  }
+  .neo-balance {
+    color: #9b9b9b;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: 25px;
+  }
+  .price-header {
+    color: #9b9b9b;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: 25px;
+  }
+  .price {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .neo-logo {
+    margin-top: -10px;
+  }
+
+  .address {
+    color: #7ed321;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -85px;
+  }
+  .info {
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 14px;
+    margin-left: -80px;
+  }
+}
