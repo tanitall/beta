@@ -28,7 +28,7 @@ class WalletInfo extends Component {
   };
 
   render = () => {
-    if (this.props.address !== null) {
+    if (this.props.address != null) {
       return (
         <div id="accountInfo" style={{ width: "75%" }}>
           <div class="sk-morpheus-bar">
@@ -111,7 +111,7 @@ class WalletInfo extends Component {
               </ReactTooltip>
             </div>
 
-            <div className="fiat">US {this.props.price}</div>
+            <div className="fiat">US</div>
           </div>
           <div className="spacer" />
           {/* <Claim /> */}
