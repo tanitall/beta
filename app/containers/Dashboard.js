@@ -29,7 +29,7 @@ class Dashboard extends Component {
   componentDidMount = () => {
     // only logging public information here
     log(this.props.net, "LOGIN", this.props.address, {});
-    initiateGetBalance(this.props.dispatch, this.props.net, this.props.address);
+    initiateGetBalance(this.props.dispatch, this.props.net, this.props.address, this.props.price);
   };
 
   render = () => {
@@ -56,13 +56,13 @@ class Dashboard extends Component {
           <div className="navbar navbar-inverse">
             <div className="navbar-header">
               <div className="logoContainer">
-                <Logo width={150} />
+                <Logo width={120} />
               </div>
 
               <div id="balance">
                 <span style={{ fontSize: "10px" }}>Combined Value</span>
                 <br />
-                <strong>${this.props.neo}</strong>
+                ${this.props.price}
               </div>
             </div>
             <div className="clearfix" />
