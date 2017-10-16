@@ -7,6 +7,13 @@
     margin-left: -20px;
     font-weight: 200;
   }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
   .container {
   }
 
@@ -15,14 +22,14 @@
   }
 
   .header {
-    background-color: rgba(15, 15, 18, 0.6);
-        border: 1px solid rgba(0, 0, 0, 0.25);
-        border-radius: 100px;
-        height: 100px;
-        margin-top: 5%;
-        padding: 10px;
-        width: 720px;
-        margin-left: 2%;
+    background-color: rgba(12, 12, 14, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    height: 100px;
+    margin-top: 2%;
+    padding: 10px;
+    width: 720px;
+    margin-left: 2%;
   }
   .neo-text {
     font-size: 36px;
@@ -61,15 +68,12 @@
     margin-top: -25px;
   }
   .center-qr {
-    position: relative;
-    left: 100%;
-    width: 240px;
   }
   .address {
     color: #7ed321;
     font-size: 18px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 25px;
     max-width: 720px;
   }
