@@ -8,9 +8,9 @@ import ReactTooltip from 'react-tooltip'
 
 let Logout = ({dispatch}) =>
   <div id="logout" data-tip data-for="logoutTip" onClick={() => dispatch(logout())}>
-    <Link to="/"><Power /></Link>
+    <Link to="/"><button className="btn">Log Out</button></Link>
     <ReactTooltip class="solidTip" id="logoutTip" place="bottom" type="dark" effect="solid">
-      <span>Logout</span>
+      <span>Exit to login screen</span>
     </ReactTooltip>
   </div>;
 

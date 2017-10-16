@@ -73,7 +73,7 @@ let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
             <div className="col-xs-2">
               <div
                 style={{
-                  marginTop: 100
+                  marginTop: 80
                 }}
                 className="go-icon"
                 onClick={e => onWifChange(dispatch, history, wif)}
