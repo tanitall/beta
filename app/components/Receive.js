@@ -37,10 +37,12 @@ class Receive extends Component {
         </div>
 
         <div className="row">
-          <h1>Receive NEO / GAS</h1>
+          <h2>Receive NEO / GAS</h2>
         </div>
 
         <div className="row">
+        <div className="col-xs-4">
+        </div>
           <div className="col-xs-4">
           <div className="center-qr">
             <div className="addressBox-send">

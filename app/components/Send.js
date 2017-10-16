@@ -164,15 +164,48 @@ let Send = ({
           </div>
         </div>
       </div>
-        <div className="row">
-          <center>
-          <h2>Send Neo/Gas</h2>
-          </center>
-        </div>
 
         <div className="row send-neo">
+
+        <div className="col-xs-6">
+        <img src={neoLogo} alt="" width="48" className="neo-logo" />
+        <h2>Send Neo/Gas</h2>
+        </div>
+        <div className="col-xs-4">
+        <div id="sendAddress">
+        <div className="btn-sm">MIN</div>
+        <div className="btn-sm">HALF</div>
+        <div className="btn-sm">MAX</div>
+        </div>
+        </div>
+        <div className="col-xs-2">
+        <div
+          id="sendAsset"
+          className="btn-bg"
+          style={{ width: "100%" }}
+          data-tip
+          //data-for="assetTip"
+          onClick={() => dispatch(toggleAsset())}
+        >
+          {selectedAsset}
+        </div>
+        <ReactTooltip
+          class="solidTip"
+          id="assetTip"
+          place="bottom"
+          type="dark"
+          effect="solid"
+        >
+          <span>Click To Switch</span>
+        </ReactTooltip>
+        {/* <p>Tap To Switch</p> */}
+        </div>
+        <div className="clearboth"></div>
+        <div id="sendAddress">
+        <hr />
+        </div>
           <div id="sendAddress">
-          <div className="col-xs-10">
+          <div className="col-xs-12">
             <input
               className={formClass}
               placeholder="Enter a valid NEO public address"
@@ -181,29 +214,6 @@ let Send = ({
               }}
             />
             </div>
-            <div className="col-xs-2">
-            <div
-              id="sendAsset"
-              className={btnClass}
-              style={{ width: "100%" }}
-              data-tip
-              //data-for="assetTip"
-              onClick={() => dispatch(toggleAsset())}
-            >
-              {selectedAsset}
-            </div>
-            </div>
-            <ReactTooltip
-              class="solidTip"
-              id="assetTip"
-              place="bottom"
-              type="dark"
-              effect="solid"
-            >
-              <span>Click To Switch</span>
-            </ReactTooltip>
-            {/* <p>Tap To Switch</p> */}
-          </div>
 
           <div className="clearboth"></div>
 
@@ -212,7 +222,7 @@ let Send = ({
             <input
               className={formClass}
               id="sendAmount"
-              placeholder="Enter amount to send in NEO"
+              placeholder="Enter amount to send"
               ref={node => {
                 sendAmount = node;
               }}
@@ -227,34 +237,23 @@ let Send = ({
                   sendAmount = node;
                 }}
               />
+              <label className="amount-dollar">$</label>
               </div>
               <div className="col-xs-2">
               <div id="sendAddress">
               <button
                 id="doSend"
                 style={{ width: "100%" }}
-                className="btn-receive"
+                className="btn-send"
                 onClick={() => openAndValidate(dispatch, neo, gas, selectedAsset)}
               >
                 Send
               </button>
               </div>
-            </div>
-            <div className="clearboth"></div>
-            <div className="col-xs-4">
-            <div id="sendAddress">
-            Send:
-            <div className="btn-sm btn">MIN</div>
-            <div className="btn-sm btn">HALF</div>
-            <div className="btn-sm btn">MAX</div>
-            </div>
-            </div>
-            <div className="col-xs-8">
-            </div>
+              </div>
           </div>
-
         </div>
-
+        </div>
       </div>
       <div
         id="confirmPane"
@@ -269,8 +268,9 @@ let Send = ({
           Confirm Transaction
         </button> */}
       </div>
+
       <div className="send-notice">
-          <p>Only send NEO and GAS to a valid NEO address. Enter an address other than a NEO address can result in your NEO/GAS being lost. You can not send a fraction of a NEO. All NEO and GAS transactions are free.</p>
+          <p>All NEO and GAS transactions are free. Only send NEO and GAS to a valid NEO address. Sending to an address other than a NEO address can result in your NEO/GAS being lost. You can not send a fraction of a NEO.</p>
           </div>
     </div>
   );
