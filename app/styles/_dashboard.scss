@@ -14,8 +14,8 @@
   background: url("../img/gas-bar.png") no-repeat center;
   width: 200px;
   height: 100px;
-  top: -20px;
-  left: 35%;
+  top: -30px;
+  left: 3%;
   position: relative;
 }
 .neo-balance {
@@ -85,10 +85,18 @@
   height: 110px;
   position: relative;
   top: 46px;
+  padding: 28px 0px 0px 22px;
   left: 50px;
 }
 
 #gas-button:hover {
   background: url("../img/gas-button-hover.png") no-repeat center;
   cursor: pointer;
+}
+
+
+#logout {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
 }

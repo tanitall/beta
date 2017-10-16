@@ -145,11 +145,11 @@ body {
 }
 
 hr {
-  margin: 15px 0;
+  margin: 10px auto 30px;
   overflow: hidden;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #1e1e1e;
 }
 
 h1,
@@ -3039,15 +3039,6 @@ a {
 .logo {
   width: 160px;
   margin: 0px 0px 0px 20px;
-}
-
-.gas-gauge {
-  height: 180px;
-  width: 1080px;
-  color: white;
-  padding: 0px;
-  position: fixed;
-  z-index: 999999999;
 }
 
 // .addressBox {
