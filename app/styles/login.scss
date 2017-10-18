@@ -6,15 +6,12 @@
     margin-top: -5px;
     font-weight: lighter !important;
   }
+  .center {text-align: center; margin: 0px auto;}
 
   input::-webkit-input-placeholder {
     color: #9b9b9b;
-    text-align: center;
     font-size: 28px;
     font-weight: lighter;
-  }
-  .trans-form {
-    margin-top: 30px;
   }
   .btn {
     background-color: transparent !important;
@@ -22,20 +19,33 @@
       background-color: transparent;
     }
   }
-
   .info {
     font-weight: lighter;
   }
-  .icon-bar {
-    margin-top: 80px;
-  }
-  .footer-info {
-    margin-top: 30px;
-    line-height: 1;
-    color: #4a4a4a;
-    text-align: center;
-    p {
-      font-size: 14px;
-    }
-  }
+
+}
+
+
+.top-80 {
+  margin-top: 80px;
+}
+.top-50 {
+  margin-top: 50px;
+}
+.top-20 {
+  margin-top: 20px;
+}
+
+.logo-top {
+  margin-top: -100px;
+}
+
+.login-address-bk {
+  margin: 100px auto 20px;
+  width: 720px;
+  padding: 30px 30px 30px 30px;
+  border: thick solid #222;
+  background: rgba(12, 12, 14, 0.85);
+  border-radius: 20px;
+  box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.45);
 }

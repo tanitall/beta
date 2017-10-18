@@ -1,7 +1,7 @@
 #newWallet {
-  padding-top: 30px;
+margin-top: 50px;
   h1 {
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 100;
     font-weight: lighter !important;
   }
@@ -9,9 +9,15 @@
   input::-webkit-input-placeholder {
     color: #9b9b9b;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: lighter;
-    padding-left: 50px;
+  }
+
+  .fixed-login {
+    max-width: 680px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
   }
 
   .btn {
@@ -21,8 +27,15 @@
     }
   }
   input {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: -10;
+  }
+
+  .confirmPass {
+    margin-top: -10px;
+  }
+
+  .icon-bar {
+    margin-top: 75px;
   }
 
   .info {
@@ -30,13 +43,5 @@
   }
   .inputs {
     margin-top: 30px;
-  }
-  .icon-bar {
-    margin-top: 100px;
-  }
-  .go-icon {
-    width: 36px;
-    height: 36px;
-    margin-top: 55px;
   }
 }
