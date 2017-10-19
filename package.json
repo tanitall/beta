@@ -3,7 +3,7 @@
   "version": "0.0.31",
   "main": "./main.js",
   "description": "Wallet for NEO blockchain",
-  "author": "© Blockchain Digital Services",
+  "author": "© Copyright Blockchain Digital Services",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "electron .",
