@@ -145,7 +145,7 @@ body {
 }
 
 hr {
-  margin: 10px auto 30px;
+  margin: 10px auto 20px;
   overflow: hidden;
   background: transparent;
   border: 0;
@@ -167,7 +167,7 @@ h6 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 46px;
 }
 
 h2 {
@@ -801,7 +801,7 @@ input {
 }
 
 .key-label {
-  color: white;
+  color: #646464;
   font-size: 18px;
 }
 
@@ -2759,9 +2759,10 @@ table {
   width: 100%;
   border: 0;
   border-collapse: separate;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   color: #cecece;
+  margin-top: 20px;
 }
 
 thead {
@@ -2771,14 +2772,14 @@ thead {
 tbody,
 .table-striped tr:nth-child(even) {
   background-color: none;
-  color: #cecece;
+  color: #7b7b7b;
 }
 
 tr {
   &:active,
   &:hover {
     color: #fff;
-    background-color: #116cd6;
+    background-color: rgba(27, 26, 29, 0.45);
   }
 }
 
@@ -2794,18 +2795,16 @@ thead tr:active {
 
 th {
   font-weight: normal;
-  border-bottom: 1px solid #646464;
-  padding: 10px 15px;
   white-space: nowrap;
-  border-bottom: 1px solid #34323c;
+  border-bottom: 1px solid #1b1a1d;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 td {
-  padding: 10px 15px;
+  padding: 5px 15px;
   white-space: nowrap;
-  border-bottom: 1px solid #34323c;
+  border-bottom: 1px solid #1b1a1d;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -2970,18 +2969,18 @@ a {
 }
 
 #balance {
-  width: 100%;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      font-size: 28px;
-      font-weight: 200;
-      text-align: center;
-      line-height: 1em;
-      opacity: 0.8;
-      padding: 5px 0px 30px;
-      border-bottom: 0 solid rgba(51, 51, 51, 0.5);
-      border-top: thin solid rgba(51, 51, 51, 0.5);
+  width: 80%;
+  margin: 0px auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 200;
+  text-align: center;
+  border-radius: 9px;
+  margin-top: 20px;
+  padding: 10px;
+  border: thin solid rgba(51, 51, 51, 0.5);
 }
+.comb-value {font-size: 18px;}
 
 .gas-gauge {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+20,000000+80&0.01+0,0.2+21,0.2+80,0+100 */
@@ -3131,21 +3130,17 @@ a {
 
 .main-nav {
   height: 100%;
-  width: 200px;
+  width: 210px;
 }
 .main-nav .navbar {
-  border-radius: 12px;
-      border-width: 0px;
-      height: 100%;
-      margin: 10px;
-      border: thin solid rgba(0, 0, 0, 0.41);
+  height: 100%;
+  margin: 0%;
 }
 .main-nav .navbar-header {
   float: none;
 }
 .main-nav .navbar-collapse {
-      border-top: 1px solid rgba(43, 43, 43, 0.6);
-  padding: 0px;
+  padding: 20px 0;
 }
 .main-nav .navbar ul {
   float: none;
@@ -3153,11 +3148,10 @@ a {
 .main-nav .navbar li {
   float: none;
   font-size: 15px;
-  margin: 6px;
+  margin: 0;
 }
 .main-nav .navbar li a {
-  padding: 10px 10px 10px 0px;
-  border-radius: 4px;
+  padding: 10px;
 }
 .main-nav .navbar a {
   /* If a menu item's text is too long, truncate it */
@@ -3169,9 +3163,11 @@ a {
 
 #checkbox {
   width: 26px !important;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 16px;
 }
+
+.center {text-align: center;}
 
 // .styled-select {
 //   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
