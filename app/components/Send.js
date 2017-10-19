@@ -160,7 +160,7 @@ let Send = ({
           </div>
           <div className="col-xs-4">
             <p className="neo-balance">Available GAS</p>
-            <p className="neo-balance"></p>
+            <p className="gas-text">{gas} <span>GAS</span></p>
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@ let Send = ({
         <div className="col-xs-2">
         <div
           id="sendAsset"
-          className="btn-bg"
+          className={btnClass}
           style={{ width: "100%" }}
           data-tip
           //data-for="assetTip"
@@ -201,13 +201,12 @@ let Send = ({
         {/* <p>Tap To Switch</p> */}
         </div>
         <div className="clearboth"></div>
-        <div id="sendAddress">
-        <hr />
-        </div>
+<div className="glyphicon glyphicon-camera scanqr-cam"></div>
           <div id="sendAddress">
           <div className="col-xs-12">
             <input
               className={formClass}
+              id="center"
               placeholder="Enter a valid NEO public address"
               ref={node => {
                 sendAddress = node;
@@ -221,6 +220,7 @@ let Send = ({
           <div className="col-xs-6">
             <input
               className={formClass}
+              type="number"
               id="sendAmount"
               placeholder="Enter amount to send"
               ref={node => {
@@ -232,7 +232,8 @@ let Send = ({
               <input
                 className={formClass}
                 id="sendAmount"
-                placeholder="Amount in USD"
+                type="number"
+                placeholder="Amount in US"
                 ref={node => {
                   sendAmount = node;
                 }}
@@ -253,6 +254,29 @@ let Send = ({
               </div>
           </div>
         </div>
+        <div className="col-xs-12">
+        <table>
+        <tr>
+        <td>Saved Addresses</td><td></td><td width="120px"><div className="btn-sm right"><div className="glyphicon glyphicon-plus"></div></div></td>
+        </tr>
+        <tr>
+        <td><span className="glyphicon glyphicon-check"></span> Bittrex</td><td><div className="btn-sm">aw12e3r4t5y6ui8o94r5t6y7u8i6g7h</div></td>
+        <td>
+        <div className="btn-sm right delete">
+        <div className="glyphicon glyphicon-trash"></div>
+        </div>
+        </td>
+        </tr>
+        <tr>
+        <td><span className="glyphicon glyphicon-check"></span> Binance</td><td><div className="btn-sm">a1w4f53sd4f5g6h7j8ia2s3d4f5g6h7</div></td>
+        <td>
+        <div className="btn-sm right delete">
+        <div className="glyphicon glyphicon-trash"></div>
+        </div>
+        </td>
+        </tr>
+        </table>
+        </div>
         </div>
       </div>
       <div
@@ -270,7 +294,7 @@ let Send = ({
       </div>
 
       <div className="send-notice">
-          <p>All NEO and GAS transactions are free. Only send NEO and GAS to a valid NEO address. Sending to an address other than a NEO address can result in your NEO/GAS being lost. You can not send a fraction of a NEO.</p>
+          <p>All NEO and GAS transactions are free. Only send NEO and GAS to a valid NEO address. Sending to an address other than a NEO address can result in your NEO/GAS being lost. You cannot send a fraction of a NEO.</p>
           </div>
     </div>
   );

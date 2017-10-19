@@ -31,19 +31,16 @@ class Receive extends Component {
             </div>
             <div className="col-xs-4">
               <p className="neo-balance">Available GAS</p>
-              <p className="neo-balance">{Math.floor(this.props.gas * 10000) / 10000}</p>
+              <p className="gas-text">{this.props.gas} <span>GAS</span></p>
             </div>
           </div>
         </div>
-
-        <div className="row">
-          <h2>Receive NEO / GAS</h2>
-        </div>
-
         <div className="row">
         <div className="col-xs-4">
         </div>
           <div className="col-xs-4">
+          <br />
+          <h2>Receive NEO/GAS</h2>
           <div className="center-qr">
             <div className="addressBox-send">
               <QRCode size={180} value={"this.props.address"} />
@@ -55,7 +52,8 @@ class Receive extends Component {
         <div className="row">
           <p className="address">{this.props.address}</p>
           <p className="info">Send NEO or GAS to this address ONLY.</p>
-          <div className="dash-icon-bar"><img src={copyIcon} alt="" width="48" className="copy-icon" />
+          <div className="dash-icon-bar">
+          <img src={copyIcon} alt="" width="48" className="copy-icon" />
           <img src={printIcon} alt="" width="48" className="print-icon" />
           <img src={emailIcon} alt="" width="48" className="email-icon" />
           <img src={linkIcon} alt="" width="48" className="link-icon" />
@@ -70,7 +68,8 @@ const mapStateToProps = state => ({
   blockHeight: state.metadata.blockHeight,
   net: state.metadata.network,
   address: state.account.address,
-  neo: state.wallet.Neo
+  neo: state.wallet.Neo,
+  gas: state.wallet.Gas
 });
 
 Receive = connect(mapStateToProps)(Receive);
