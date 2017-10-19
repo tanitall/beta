@@ -36,6 +36,34 @@ const onWifChange = (dispatch, history) => {
   }, 500);
 };
 
+const { dialog } = require("electron").remote;
+const loadKeyRecovery = dispatch => {
+  dialog.showOpenDialog(fileNames => {
+    // fileNames is an array that contains all the selected
+    if (fileNames === undefined) {
+      console.log("No file selected");
+      return;
+    }
+    const filepath = fileNames[0];
+    fs.readFile(filepath, "utf-8", (err, data) => {
+      if (err) {
+        alert("An error ocurred reading the file :" + err.message);
+        return;
+      }
+      const keys = JSON.parse(data);
+      storage.get("keys", (error, data) => {
+        _.each(keys, (value, key) => {
+          data[key] = value;
+        });
+        dispatch(setKeys(data));
+        storage.set("keys", data);
+      });
+      // dispatch(setKeys(keys));
+      // storage.set('keys', keys);
+    });
+  });
+};
+
 class LoginLocalStorage extends Component {
   componentDidMount = () => {
     storage.get("keys", (error, data) => {
@@ -142,7 +170,10 @@ class LoginLocalStorage extends Component {
                 </div>
               </Link>
               <Link to="/settings">
-                <div className="icon-cell">
+                <div
+                  className="icon-cell"
+                  onClick={() => loadKeyRecovery(this.props.dispatch)}
+                >
                   <div className="upload-icon" />
                   Upload Recovery File
                 </div>
