@@ -81,14 +81,26 @@ class Claim extends Component {
       );
     if (this.props.disableClaimButton === false) {
       renderButton = (
-        <button onClick={doClaim}>Claim {this.props.claimAmount} GAS</button>
+        <div id="gas-gauge" onClick={doClaim}>
+          <div id="gas-button">
+            <span classname="gas-claim">
+              Claim Gas<br />
+              {this.props.claimAmount}
+            </span>
+          </div>
+        </div>
       );
     } else {
       renderButton = (
         <div>
-          <button data-tip data-for="claimTip" className="disabled">
-            Claim {this.props.claimAmount} GAS
-          </button>
+          <div id="gas-gauge" data-tip data-for="claimTip" className="disabled">
+            <div id="gas-button">
+              <span className="gas-claim">
+                Claim Gas<br />
+                {this.props.claimAmount}
+              </span>
+            </div>
+          </div>
           <ReactTooltip
             class="solidTip"
             id="claimTip"

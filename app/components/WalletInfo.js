@@ -39,16 +39,7 @@ class WalletInfo extends Component {
                   {this.props.neo} <span>NEO</span>
                 </p>
               </div>
-              <div className="col-xs-4">
-                <div id="gas-gauge">
-                  <div id="gas-button">
-                    <span class="gas-claim">
-                      Claim Gas<br />
-                      0.000000
-                    </span>
-                  </div>
-                </div>
-              </div>
+              <div className="col-xs-4">{<Claim />}</div>
               <div className="col-xs-4">
                 <p className="neo-balance">Available GAS</p>
                 <p className="gas-text">
@@ -122,7 +113,7 @@ class WalletInfo extends Component {
             <div className="fiat">US</div>
           </div>
           <div className="spacer" />
-          {<Claim />}
+
           <div className="spacer" />
           {/* <div className="qrCode">
             <canvas id="qrCanvas" ref={node => (this.canvas = node)} />
