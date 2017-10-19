@@ -39,93 +39,76 @@ const onWifChange = (dispatch, history, wif) => {
 
 let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
   <div>
-    <div id="login" className="container">
+  <div className="login-address-bk top-50">
+    <div className="logo-top">
       <div className="row">
-        <div className="col-xs-4 col-xs-offset-5">
+        <div className="center">
           <Logo width={140} />
         </div>
       </div>
 
       <div className="row">
-        <div className="col-xs-10 col-xs-offset-1">
-          <div>
-            <h1
-              style={{ color: "white", textAlign: "center", marginBottom: 30 }}
-            >
+        <div className="col-xs-12">
+          <div><br />
+            <h1 className="center">
               Welcome to Morpheus
             </h1>
           </div>
 
-          <div className="row">
-            <div className="col-xs-9 col-xs-offset-1">
+          <div className="row top-50">
+            <div className="col-xs-10 col-xs-offset-1">
               <div className="form-group">
                 <input
-                  type="text"
+                  type="password"
                   className="trans-form"
-                  type="text"
-                  placeholder="Enter your NEO private key"
+                  placeholder="Enter a NEO private key"
                   ref={node => (wif = node)}
                 />
               </div>
               <hr className="purple" />
             </div>
 
-            <div className="col-xs-2">
-              <div
-                style={{
-                  marginTop: 100
-                }}
-                className="go-icon"
+              <div className="go-icon"
                 onClick={e => onWifChange(dispatch, history, wif)}
               />
             </div>
-          </div>
-          <div className="col-xs-8 col-xs-offset-2">
-            <p
-              className="info"
-              style={{ color: "#9B9B9B", fontSize: 18, marginLeft: 30 }}
-            >
-              Please load an existing wallet or create a new one.
-            </p>
-          </div>
+            <br />
 
-          <div className="row">
-            <div className="icon-bar">
-              <Link to="/create">
-                <div className="icon-cell">
-                  <div className="new-icon" />
-                  Create New Wallet
-                </div>
-              </Link>
-              <Link to="/LoginLocalStorage">
-                <div className="icon-cell">
-                  <div className="lock-icon" />
-                  Login With Saved Wallet
-                </div>
-              </Link>
-              <Link to="/settings">
-                <div className="icon-cell">
-                  <div className="upload-icon" />
-                  Upload Recovery File
-                </div>
-              </Link>
-            </div>
-          </div>
-
-          <div className="row footer-info">
-            <p>
-              Your private key is only used to load your balance and transaction
-              history from the blockchain.
-            </p>
-            <p>
-              Once entered, it is encrypted and never shared. You can still use
-              your private key with other wallets.
-            </p>
-          </div>
+        <p className="center top-20 col-xs-10 col-xs-offset-1">
+          Your private key is never shared and is only used to load your balance and transaction history from the blockchain. Once entered, you can create an encrypted backup on your computer. You can still use your private key with other wallets.
+        </p>
         </div>
       </div>
     </div>
+</div>
+
+<div className="dash-bar top-50">
+  <Link to="/create">
+  <div className="dash-icon-bar">
+    <div className="icon-border">
+      <span className="glyphicon glyphicon-star"></span>
+    </div>
+    Create a Neo Address
   </div>
+  </Link>
+  <Link to="/LoginLocalStorage">
+  <div className="dash-icon-bar">
+    <div className="icon-border">
+      <span className="glyphicon glyphicon-lock"></span>
+    </div>
+    Login Via Saved Wallet
+  </div>
+  </Link>
+  <Link to="/settings">
+  <div className="dash-icon-bar">
+    <div className="icon-border">
+      <span className="glyphicon glyphicon-open"></span>
+    </div>
+    Login Via Recovery File
+  </div>
+  </Link>
+</div>
+</div>
 );
 
 const mapStateToProps = state => ({

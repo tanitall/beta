@@ -11,6 +11,13 @@
     font-size: 20px;
   }
 
+  .neoLogo {
+    margin: -110px 0px 15px;
+    padding-top: 30px;
+  }
+
+  .clearboth {clear:both;}
+
   .btn-blue {
     // padding: 10px 8px;
   }
@@ -23,10 +30,6 @@
     .col-xs-3 {
       width: auto;
     }
-  }
-
-  .key-label {
-    font-size: 18px;
   }
 
   input {
@@ -50,15 +53,13 @@
     text-align: center;
   }
 
-  .form-control {
-    height: 42px;
-  }
-
   .addressBox {
-    border: 10px solid #d3d3d3;
-    background-color: white;
-    border-radius: 30px;
-    padding: 10px 4px 0 10px;
+    border: 8px solid #d3d3d3;
+        background-color: white;
+        border-radius: 20px;
+        padding: 14px 10px 7px;
+        text-align: center;
+        margin-top: 15px;
   }
 
   .receive-qr-bk {
@@ -71,10 +72,6 @@
     -o-background-size: cover;
     background-size: cover;
     font-size: 10px;
-  }
-
-  .pull-left {
-    margin-bottom: 30px;
   }
 }
 
@@ -96,13 +93,10 @@
     padding-left: 10px;
   }
 
-  .form-control {
-    height: 42px;
-  }
-
   .key-label {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 14px;
+    color: #646464;
   }
 
   .keyList {
@@ -118,3 +112,50 @@ input.pubicAddress {
   border-color: #6972d5;
   border-radius: 6px;
 }
+
+.icon-border {
+  height: 48px;
+  width: 48px;
+  border-radius: 99px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  background: rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.dash-bar {
+  width: 300px;
+  margin: 0px auto;
+  display: block;
+}
+
+.dash-icon-bar {
+  width: 80px;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 10px;
+  opacity: 0.3;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dash-icon-bar:hover {
+  opacity: 0.6;
+}
+
+.new-address-bk {
+  margin: 75px auto 20px;
+  width: 720px;
+  padding: 30px 30px 30px 30px;
+  border: thick solid #222;
+  background: rgba(12, 12, 14, 0.85);
+  border-radius: 20px;
+  box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.45);
+}
+
+.glyphicon {cursor: pointer;}

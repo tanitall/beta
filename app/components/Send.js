@@ -11,6 +11,7 @@ import {
 import SplitPane from "react-split-pane";
 import ReactTooltip from "react-tooltip";
 import { log } from "../util/Logs";
+import neoLogo from "../images/neo.png";
 
 let sendAddress, sendAmount, confirmButton;
 
@@ -131,73 +132,151 @@ let Send = ({
   let formClass;
   if (selectedAsset === "Neo") {
     btnClass = "btn-send";
-    formClass = "form-control-neo";
+    formClass = "form-send-neo";
   } else if (selectedAsset === "Gas") {
     btnClass = "btn-send-gas";
-    formClass = "form-control-gas";
+    formClass = "form-send-gas";
   }
   return (
     <div id="send">
       <div id="sendPane">
-        <div className="row">
-          <h1>Send</h1>
-          <h2>Available Balance {neo}</h2>
+      <div className="row ">
+        <div className="header">
+          <div className="col-xs-4">
+            <p className="neo-balance">Available Neo</p>
+            <p className="neo-text">
+              {neo} <span> NEO</span>
+            </p>
+          </div>
+          <div className="col-xs-4">
+          <div id="gas-gauge">
+            <div id="gas-button">
+              <span class="gas-claim">
+                Claim Gas<br />
+                0.000000
+              </span>
+            </div>
+            </div>
+          </div>
+          <div className="col-xs-4">
+            <p className="neo-balance">Available GAS</p>
+            <p className="gas-text">{gas} <span>GAS</span></p>
+          </div>
         </div>
+      </div>
 
-        <div className="row">
+        <div className="row send-neo">
+
+        <div className="col-xs-6">
+        <img src={neoLogo} alt="" width="48" className="neo-logo" />
+        <h2>Send Neo/Gas</h2>
+        </div>
+        <div className="col-xs-4">
+        <div id="sendAddress">
+        <div className="btn-sm">MIN</div>
+        <div className="btn-sm">HALF</div>
+        <div className="btn-sm">MAX</div>
+        </div>
+        </div>
+        <div className="col-xs-2">
+        <div
+          id="sendAsset"
+          className={btnClass}
+          style={{ width: "100%" }}
+          data-tip
+          //data-for="assetTip"
+          onClick={() => dispatch(toggleAsset())}
+        >
+          {selectedAsset}
+        </div>
+        <ReactTooltip
+          class="solidTip"
+          id="assetTip"
+          place="bottom"
+          type="dark"
+          effect="solid"
+        >
+          <span>Click To Switch</span>
+        </ReactTooltip>
+        {/* <p>Tap To Switch</p> */}
+        </div>
+        <div className="clearboth"></div>
+<div className="glyphicon glyphicon-camera scanqr-cam"></div>
           <div id="sendAddress">
+          <div className="col-xs-12">
             <input
               className={formClass}
-              placeholder="Enter Address"
+              id="center"
+              placeholder="Enter a valid NEO public address"
               ref={node => {
                 sendAddress = node;
               }}
             />
-          </div>
+            </div>
+
+          <div className="clearboth"></div>
+
           <div id="sendAmount">
+          <div className="col-xs-6">
             <input
               className={formClass}
+              type="number"
               id="sendAmount"
-              placeholder="Amount to Send"
+              placeholder="Enter amount to send"
               ref={node => {
                 sendAmount = node;
               }}
             />
+            </div>
+            <div className="col-xs-4">
+              <input
+                className={formClass}
+                id="sendAmount"
+                type="number"
+                placeholder="Amount in US"
+                ref={node => {
+                  sendAmount = node;
+                }}
+              />
+              <label className="amount-dollar">$</label>
+              </div>
+              <div className="col-xs-2">
+              <div id="sendAddress">
+              <button
+                id="doSend"
+                style={{ width: "100%" }}
+                className="btn-send"
+                onClick={() => openAndValidate(dispatch, neo, gas, selectedAsset)}
+              >
+                Send
+              </button>
+              </div>
+              </div>
           </div>
-
-          <div className="col-xs-3 col-xs-offset-3">
-            <button
-              id="sendAsset"
-              className={btnClass}
-              style={{ width: "100%" }}
-              data-tip
-              //data-for="assetTip"
-              onClick={() => dispatch(toggleAsset())}
-            >
-              {selectedAsset}
-            </button>
-            <ReactTooltip
-              class="solidTip"
-              id="assetTip"
-              place="bottom"
-              type="dark"
-              effect="solid"
-            >
-              <span>Tap To Switch</span>
-            </ReactTooltip>
-            {/* <p>Tap To Switch</p> */}
-          </div>
-
-          <div className="col-xs-3">
-            <button
-              id="doSend"
-              style={{ width: "100%" }}
-              className="btn-receive"
-              onClick={() => openAndValidate(dispatch, neo, gas, selectedAsset)}
-            >
-              Send Now
-            </button>
-          </div>
+        </div>
+        <div className="col-xs-12">
+        <table>
+        <tr>
+        <td>Saved Addresses</td><td></td><td width="120px"><div className="btn-sm right"><div className="glyphicon glyphicon-plus"></div></div></td>
+        </tr>
+        <tr>
+        <td><span className="glyphicon glyphicon-check"></span> Bittrex</td><td><div className="btn-sm">aw12e3r4t5y6ui8o94r5t6y7u8i6g7h</div></td>
+        <td>
+        <div className="btn-sm right delete">
+        <div className="glyphicon glyphicon-trash"></div>
+        </div>
+        </td>
+        </tr>
+        <tr>
+        <td><span className="glyphicon glyphicon-check"></span> Binance</td><td><div className="btn-sm">a1w4f53sd4f5g6h7j8ia2s3d4f5g6h7</div></td>
+        <td>
+        <div className="btn-sm right delete">
+        <div className="glyphicon glyphicon-trash"></div>
+        </div>
+        </td>
+        </tr>
+        </table>
+        </div>
         </div>
       </div>
       <div
@@ -213,6 +292,10 @@ let Send = ({
           Confirm Transaction
         </button> */}
       </div>
+
+      <div className="send-notice">
+          <p>All NEO and GAS transactions are free. Only send NEO and GAS to a valid NEO address. Sending to an address other than a NEO address can result in your NEO/GAS being lost. You cannot send a fraction of a NEO.</p>
+          </div>
     </div>
   );
 };

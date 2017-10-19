@@ -6,15 +6,12 @@ import { setKeys } from "../modules/account";
 import Delete from "react-icons/lib/md/delete";
 import _ from "lodash";
 import fs from "fs";
-
-const { dialog } = require("electron").remote;
-
 import storage from "electron-json-storage";
-
 import Logo from "./Brand/LogoBlank";
 
 let explorer_select;
 
+const { dialog } = require("electron").remote;
 const saveKeyRecovery = keys => {
   const content = JSON.stringify(keys);
   dialog.showSaveDialog(
@@ -107,11 +104,6 @@ class Settings extends Component {
 
   render = () => (
     <div id="settings" className="container">
-      <div className="row">
-        <div className="col-xs-4 col-xs-offset-5">
-          <Logo width={140} />
-        </div>
-      </div>
       <div className="description">
         Manage your Morpheus wallet keys and settings
       </div>

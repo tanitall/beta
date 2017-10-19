@@ -1,63 +1,94 @@
 #receive {
-  width: 749px;
+  width: 720px;
   position: absolute;
   h1 {
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
-    margin-left: -100px;
+    margin-left: -20px;
+    font-weight: 200;
   }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+  }
+
   .container {
   }
 
   .addressBox-send {
-    margin-left: 18px;
   }
 
   .header {
-    background-color: #212121;
-    border-radius: 100px;
+    background-color: rgba(12, 12, 14, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
     height: 100px;
+    margin-top: 2%;
+    padding: 10px;
+    width: 720px;
+    margin-left: 2%;
   }
   .neo-text {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.2em;
     span {
       color: #7ed321;
     }
   }
   .neo-balance {
     color: #9b9b9b;
-    font-size: 18px;
+    font-size: 13px;
     padding: 0;
     margin: 0;
-    margin-left: 25px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 4%;
+    max-width: 200px;
   }
   .price-header {
     color: #9b9b9b;
-    font-size: 18px;
+    font-size: 13px;
     padding: 0;
     margin: 0;
-    margin-left: 25px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 4%;
   }
   .price {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 200;
+    text-align: center;
   }
   .neo-logo {
-    margin-top: -10px;
+    margin-top: -25px;
   }
-
+  .center-qr {
+  }
   .address {
     color: #7ed321;
     font-size: 18px;
     text-align: center;
-    margin-top: 40px;
-    margin-left: -85px;
+    margin-top: 20px;
+    margin-left: 25px;
+    max-width: 720px;
   }
   .info {
     text-align: center;
     color: #9b9b9b;
     font-size: 14px;
-    margin-left: -80px;
+    margin-left: 25px;
+    max-width: 720px;
   }
+  .dash-icon-bar {width: 300px; position: relative; left: 32%;}
+  .copy-icon {margin: 10px; opacity: 0.5;}
+  .print-icon {margin: 10px; opacity: 0.5;}
+  .email-icon {margin: 10px; opacity: 0.5;}
+  .link-icon {margin: 10px; opacity: 0.5;}
+
+  .copy-icon:hover,.print-icon:hover,.email-icon:hover,.link-icon:hover {opacity: 1; cursor: pointer;}
 }

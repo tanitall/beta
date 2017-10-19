@@ -66,11 +66,10 @@ class DisplayWalletKeys extends Component {
           <div className="row">
             <div className="col-xs-12">
               <p style={{ color: "white", textAlign: "center" }}>
-                Please ensure you backup your Private Key and Secret Phrase. It
+                Please ensure you backup your Private Key and password. It
                 will never be shown to you again and we can not help you
                 retrieve it if lost. Your Private Key is encrypted on your
-                computer is never shared or stored online by Morpheus. Learn
-                More
+                computer is never shared or stored online by Morpheus.
               </p>
             </div>
           </div>

@@ -61,27 +61,28 @@ class CreateWallet extends Component {
       //     "6PYMN2kN8RJ8Es9jWiR7WtKYdivucbwribqgTa6r4mJVGuqjPwiP8mNYWd"
       //   }
       // />
-      <div className="container" id="newWallet">
-        <div className="row">
-          <div className="col-xs-4 col-xs-offset-5">
-            <NeoLogo width={140} />
+<div>
+      <div className="login-address-bk top-50">
+        <div className="row logo-top">
+          <div className="center">
+            <Logo width={140} />
           </div>
 
           <div className="col-xs-10 col-xs-offset-1">
-            <div className="info">
+            <div className=""><br />
               <h1 style={{ color: "white", textAlign: "center" }}>
-                Create a new NEO Wallet
+                Create a NEO Address
               </h1>
             </div>
 
-            <div className="row inputs">
-              <div className="col-xs-offset-1 col-xs-9">
+            <div className="row">
+              <div className="col-xs-offset-1 col-xs-10">
                 <div className="form-group">
                   <input
                     type="text"
                     className="trans-form"
                     ref={node => (passphrase = node)}
-                    placeholder="Create a secure password"
+                    placeholder="Enter a secure password"
                   />
                 </div>
                 <hr className="purple" />
@@ -105,29 +106,38 @@ class CreateWallet extends Component {
           </div>
         </div>
 
-        <div className="row">
-          <div className="icon-bar">
-            <Link to="/create">
-              <div className="icon-cell">
-                <div className="new-icon" />
-                Create New Wallet
-              </div>
-            </Link>
-            <Link to="/">
-              <div className="icon-cell">
-                <div className="lock-icon" />
-                Login Using Private Key
-              </div>
-            </Link>
-            <Link to="/settings">
-              <div className="icon-cell">
-                <div className="upload-icon" />
-                Upload Recovery File
-              </div>
-            </Link>
+      </div>
+      <div className="row">
+        <div className="dash-bar">
+          <Link to="/LoginLocalStorage">
+          <div className="dash-icon-bar">
+            <div className="icon-border">
+            <span className="glyphicon glyphicon-user"></span>
+            </div>
+            Open a Saved Wallet
           </div>
+          </Link>
+
+          <Link to="/">
+          <div className="dash-icon-bar">
+            <div className="icon-border">
+            <span className="glyphicon glyphicon-qrcode"></span>
+            </div>
+            Login Using Private Key
+          </div>
+          </Link>
+
+          <Link to="/settings">
+          <div className="dash-icon-bar">
+            <div className="icon-border">
+              <span className="glyphicon glyphicon-open"></span>
+            </div>
+            Login Via Recovery File
+          </div>
+          </Link>
         </div>
       </div>
+</div>
     );
     return (
       <div id="newWallet">

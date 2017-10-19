@@ -2,33 +2,11 @@
   display: inline-block;
   width: 100%;
   height: 48px;
-  padding: 4px 8px;
-  font-size: 14px;
-  line-height: 2.6;
   background-color: rgba(0, 0, 0, 0.8) !important;
   border: 1px solid #282628;
-  border-radius: 99px;
-  outline: none;
-  /* margin: 0px 5px 16px 5px; */
-  text-align: center;
-  color: white;
-}
-
-.trans-form,
-.trans-form:active,
-.trans-form:focus {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px solid #000;
-  display: inline-block;
-  width: 620px;
-  height: 48px;
-  padding: 4px 8px;
-  font-size: 24px;
   outline: none;
   text-align: center;
   color: white;
-  font-family: "Ubuntu", Helvetica, Arial;
-  font-weight: 200;
 }
 
 .input-data {
