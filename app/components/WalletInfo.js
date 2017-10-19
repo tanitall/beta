@@ -31,26 +31,34 @@ class WalletInfo extends Component {
     if (this.props.address != null) {
       return (
         <div id="accountInfo" style={{ width: "75%" }}>
-          <div class="sk-morpheus-bar">
-            <div class="neo-balance">
-              <h3>{this.props.neo} NEO</h3>
-              <hr />
-              <span class="sk-balance">$0.00</span>
-            </div>
-            <div class="gas-balance">
-              <h3>{Math.floor(this.props.gas * 10000) / 10000} GAS</h3>
-              <hr />
-              <span class="sk-balance">$0.00</span>
-            </div>
-            <div id="gas-gauge">
-              <div id="gas-button">
-                <span class="gas-claim">
-                  Claim Gas<br />
-                  0.000000
-                </span>
+          <div className="row ">
+            <div className="header">
+              <div className="col-xs-4">
+                <p className="neo-balance">Available Neo</p>
+                <p className="neo-text">
+                  {this.props.neo} <span>NEO</span>
+                </p>
+              </div>
+              <div className="col-xs-4">
+                <div id="gas-gauge">
+                  <div id="gas-button">
+                    <span class="gas-claim">
+                      Claim Gas<br />
+                      0.000000
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xs-4">
+                <p className="neo-balance">Available GAS</p>
+                <p className="gas-text">
+                  {Math.floor(this.props.gas * 10000) / 10000}
+                  <span>GAS</span>
+                </p>
               </div>
             </div>
           </div>
+
           <div className="label">Your Public Neo Address:</div>
           <div className="address">
             {this.props.address}
@@ -114,7 +122,7 @@ class WalletInfo extends Component {
             <div className="fiat">US</div>
           </div>
           <div className="spacer" />
-          {/* <Claim /> */}
+          {<Claim />}
           <div className="spacer" />
           {/* <div className="qrCode">
             <canvas id="qrCanvas" ref={node => (this.canvas = node)} />
