@@ -29,7 +29,12 @@ class Dashboard extends Component {
   componentDidMount = () => {
     // only logging public information here
     log(this.props.net, "LOGIN", this.props.address, {});
-    initiateGetBalance(this.props.dispatch, this.props.net, this.props.address, this.props.price);
+    initiateGetBalance(
+      this.props.dispatch,
+      this.props.net,
+      this.props.address,
+      this.props.price
+    );
   };
 
   render = () => {
@@ -44,10 +49,14 @@ class Dashboard extends Component {
       }
     }
 
-    let sendScreen = <Send />;
+    let dash = (
+      <div className="container">
+        <WalletInfo />
+      </div>
+    );
 
-    if (this.props.location.pathname !== "/send") {
-      sendScreen = <div />;
+    if (this.props.location.pathname !== "/dashboard") {
+      dash = <div />;
     }
     console.log(this.props.location);
     return (
@@ -95,6 +104,7 @@ class Dashboard extends Component {
         </div>
         <div style={{ marginLeft: 230, marginTop: 20 }}>
           <div className="container">{this.props.children}</div>
+          {dash}
         </div>
       </div>
     );
