@@ -253,45 +253,6 @@ let Send = ({
               </div>
             </div>
           </div>
-          <div className="col-xs-12">
-            <table>
-              <tr>
-                <td>Saved Addresses</td>
-                <td />
-                <td width="120px">
-                  <div className="btn-sm right">
-                    <div className="glyphicon glyphicon-plus" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span className="glyphicon glyphicon-check" /> Bittrex
-                </td>
-                <td>
-                  <div className="btn-sm">aw12e3r4t5y6ui8o94r5t6y7u8i6g7h</div>
-                </td>
-                <td>
-                  <div className="btn-sm right delete">
-                    <div className="glyphicon glyphicon-trash" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span className="glyphicon glyphicon-check" /> Binance
-                </td>
-                <td>
-                  <div className="btn-sm">a1w4f53sd4f5g6h7j8ia2s3d4f5g6h7</div>
-                </td>
-                <td>
-                  <div className="btn-sm right delete">
-                    <div className="glyphicon glyphicon-trash" />
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
         </div>
       </div>
       <div
