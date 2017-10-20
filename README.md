@@ -1,6 +1,6 @@
 # Morpheus Wallet
 
-(Please note that this software is currently under development. Use with caution. This repo may not contain the most recent version.)
+*(Use with caution. This software is currently under development. This repo may not contain the most recent version.)*
 
 ## Required Tools and Dependencies
 
