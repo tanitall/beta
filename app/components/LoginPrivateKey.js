@@ -70,7 +70,7 @@ let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
     <div className="login-address-bk top-50">
       <div className="logo-top">
         <div className="row">
-          <div className="center">
+          <div className="center logobounce">
             <Logo width={140} />
           </div>
         </div>
@@ -125,15 +125,15 @@ let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
       <Link to="/LoginLocalStorage">
         <div className="dash-icon-bar">
           <div className="icon-border">
-            <span className="glyphicon glyphicon-lock" />
+            <span className="glyphicon glyphicon-user" />
           </div>
-          Login Via Saved Wallet
+          Open a Saved Wallet
         </div>
       </Link>
 
       <div className="dash-icon-bar" onClick={() => loadKeyRecovery(dispatch)}>
         <div className="icon-border">
-          <span className="glyphicon glyphicon-open" />
+          <span className="glyphicon glyphicon-paperclip" />
         </div>
         Login Via Recovery File
       </div>
