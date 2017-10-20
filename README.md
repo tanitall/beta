@@ -7,7 +7,7 @@
 Mac OSX (Stable on Live net)
 [Morpheus Wallet Alpha v0.0.35](https://www.dropbox.com/s/4df8st7ly0fybtj/Morpheus-0.0.35-mac.zip?dl=0)
  - DO NOT SEND NEO
- - FOR INTERNAL USE ONLY
+ - FOR INTERNAL DEMO USE ONLY
  - Charts not activated
 
 ## License
