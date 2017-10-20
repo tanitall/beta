@@ -2,6 +2,26 @@
 
 *(Use with caution. This software is currently under development. This repo may not contain the most recent version. Please refer to the [release checklist](https://github.com/MorpheusWallet/Morpheus/blob/master/release-checklist.md) for software specification.)*
 
+## License
+
+Copyright 2017 Blockchain Services Limited (Trinidad and Tobago)
+
+Licensed under the Apache License, Version 2.0 (the "[LICENSE](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.txt"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+   
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+## Credit
+
+This application uses Open Source components under the MIT License agreement created by Ethan Fast and City of Zion (COZ) Dev Team. You can find the source code of their open source projects along with license information below. We would like to thank and acknowledge Ethan Fast and the developers at City of Zion (COZ) for their contributions to open source and making projects like this possible.
+
+ - Project: [NEON Wallet](https://github.com/CityOfZion/neon-wallet)
+ - Developers: [Ethan Fast](https://github.com/Ejhfast) and [CoZ](https://github.com/CityOfZion)
+ - License: [MIT License](https://github.com/CityOfZion/neon-wallet/blob/dev/LICENSE.md)
+ 
+_____
+
 ## Required Tools and Dependencies
 
   - Node (This project uses the current LTS node version, which is `v6.11.0`)
@@ -14,19 +34,6 @@ Execute these commands in the project's root directory:
   - `npm install` Installing node dependencies
   - `npm run assets`
   - `npm start` for running the project
-  
-
-## License
-
-Morpheus Wallet is released under the Apache License. Please refer to the [LICENSE](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.txt) file that accompanies this project for more information including complete terms and conditions.
-
-## Credit
-
-This application uses Open Source components under the MIT License agreement created by Ethan Fast and City of Zion (COZ) Dev Team. You can find the source code of their open source projects along with license information below. We would like to thank and acknowledge Ethan Fast and the developers at City of Zion (COZ) for their contributions to open source and making projects like this possible.
-
- - Project: [NEON Wallet](https://github.com/CityOfZion/neon-wallet)
- - Developers: [Ethan Fast](https://github.com/Ejhfast) and [CoZ](https://github.com/CityOfZion)
- - License: [MIT License](https://github.com/CityOfZion/neon-wallet/blob/dev/LICENSE.md)
 
 _____
 
