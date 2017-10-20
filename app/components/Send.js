@@ -12,6 +12,7 @@ import SplitPane from "react-split-pane";
 import ReactTooltip from "react-tooltip";
 import { log } from "../util/Logs";
 import neoLogo from "../images/neo.png";
+import Claim from "./Claim.js";
 
 let sendAddress, sendAmount, confirmButton;
 
@@ -149,18 +150,11 @@ let Send = ({
             </p>
           </div>
           <div className="col-xs-4">
-          <div id="gas-gauge">
-            <div id="gas-button">
-              <span class="gas-claim">
-                Claim Gas<br />
-                0.000000
-              </span>
-            </div>
-            </div>
+          {<Claim />}
           </div>
           <div className="col-xs-4">
             <p className="neo-balance">Available GAS</p>
-            <p className="gas-text">{gas} <span>GAS</span></p>
+            <p className="gas-text">{Math.floor(gas * 1000000) / 1000000} <span>GAS</span></p>
           </div>
         </div>
       </div>
@@ -168,7 +162,7 @@ let Send = ({
         <div className="row send-neo">
 
         <div className="col-xs-6">
-        <img src={neoLogo} alt="" width="48" className="neo-logo" />
+        <img src={neoLogo} alt="" width="48" className="neo-logo logobounce" />
         <h2>Send Neo/Gas</h2>
         </div>
         <div className="col-xs-4">
