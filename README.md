@@ -55,7 +55,7 @@ Execute these commands in the project's root directory:
 
 _____
 
-Morpheus is an all-in-one blockchain asset manager that allows you to securely send and receive NEO and GAS for free, claim GAS, create and save new wallet addresses, get the latest cryptocurrency prices, as well as manage and track your portfolio over time.
+Morpheus is an all-in-one client side desktop wallet that allows you to send and recieive NEO/GAS and other popular cryptocrurrencies as well as monitor and manage your portfolio.
 
 To be continued....
 
