@@ -23,11 +23,9 @@ Morpheus wallet is released under the Apache License. Please refer to the [LICEN
 ## Credits
 This application uses Open Source components under the MIT License agreement. You can find the source code of their open source projects along with license information below. We would like to acknowledge Ethan Fast and the developers at City of Zion for their contributions to open source and making projects like this possible.
 
-Project: [NEON Wallet](https://github.com/CityOfZion/neon-wallet)
-
-Developers: [Ethan Fast](https://github.com/Ejhfast) and [CoZ](https://github.com/CityOfZion)
-
-License: [MIT License](https://github.com/CityOfZion/neon-wallet/blob/dev/LICENSE.md)
+ - Project: [NEON Wallet](https://github.com/CityOfZion/neon-wallet)
+ - Developers: [Ethan Fast](https://github.com/Ejhfast) and [CoZ](https://github.com/CityOfZion)
+ - License: [MIT License](https://github.com/CityOfZion/neon-wallet/blob/dev/LICENSE.md)
 
 _____
 
