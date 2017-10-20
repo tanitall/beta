@@ -2,11 +2,12 @@
 
 *(Use with caution. This software is currently under development. This repo may not contain the most recent version. Please refer to the [release checklist](https://github.com/MorpheusWallet/Morpheus/blob/master/release-checklist.md) for software specification.)*
 
-## Releases
+## Alpha Releases
 
+Mac OSX (Stable on Live net)
 [Morpheus Wallet Alpha v0.0.35](https://www.dropbox.com/s/4df8st7ly0fybtj/Morpheus-0.0.35-mac.zip?dl=0)
-(Stable on Live net)
  - DO NOT SEND NEO
+ - FOR INTERNAL USE ONLY
  - Charts not activated
 
 ## License
