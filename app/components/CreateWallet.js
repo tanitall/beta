@@ -83,7 +83,7 @@ class CreateWallet extends Component {
       <div>
         <div className="login-address-bk top-50">
           <div className="row logo-top">
-            <div className="center">
+            <div className="center logobounce">
               <Logo width={140} />
             </div>
 
@@ -105,13 +105,14 @@ class CreateWallet extends Component {
                       placeholder="Enter a secure password"
                     />
                   </div>
+                  <hr className="green loginfade" />
                   <hr className="purple" />
                   <div className="form-group">
                     <input
                       type="text"
                       className="trans-form"
                       ref={node => (passphrase2 = node)}
-                      placeholder="Confirm your password"
+                      placeholder="Retype password and click arrow"
                     />
                   </div>
                 </div>
@@ -142,7 +143,7 @@ class CreateWallet extends Component {
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-qrcode" />
                 </div>
-                Login Using Private Key
+                Login Via Private Key
               </div>
             </Link>
 
@@ -151,7 +152,7 @@ class CreateWallet extends Component {
               onClick={() => loadKeyRecovery(this.props.dispatch)}
             >
               <div className="icon-border">
-                <span className="glyphicon glyphicon-open" />
+                <span className="glyphicon glyphicon-paperclip" />
               </div>
               Login Via Recovery File
             </div>

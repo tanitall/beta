@@ -243,6 +243,22 @@ class DisplayWalletKeys extends Component {
 
             <div className="private">
               <div className="keyList">
+
+              {/* Your Encrypted Private Key*/}
+              <div className="col-xs-6">
+                <p className="key-label">Your Private Key:</p>
+                <input
+                  type="text"
+                  onClick={() => clipboard.writeText(this.props.wif)}
+                  className="form-control"
+                  contentEditable={false}
+                  readOnly={true}
+                  value={this.props.wif}
+                  data-tip
+                  data-for="copyPrivateKeyTip"
+                />
+              </div>
+
                 {/* Your Encrypted Private Key*/}
                 <div className="col-xs-6">
                   <p className="key-label">Your Encrypted Private Key:</p>
@@ -257,20 +273,7 @@ class DisplayWalletKeys extends Component {
                     data-for="copyPassphraseKeyTip"
                   />
                 </div>
-                {/* Your Encrypted Private Key*/}
-                <div className="col-xs-6">
-                  <p className="key-label">Your Private Key:</p>
-                  <input
-                    type="text"
-                    onClick={() => clipboard.writeText(this.props.wif)}
-                    className="form-control"
-                    contentEditable={false}
-                    readOnly={true}
-                    value={this.props.wif}
-                    data-tip
-                    data-for="copyPrivateKeyTip"
-                  />
-                </div>
+
               </div>
             </div>
           </div>

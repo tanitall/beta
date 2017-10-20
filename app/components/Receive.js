@@ -6,6 +6,7 @@ import copyIcon from "../images/copy-icon.png";
 import printIcon from "../images/print-icon.png";
 import emailIcon from "../images/email-icon.png";
 import linkIcon from "../images/link-icon.png";
+import Claim from "./Claim";
 
 class Receive extends Component {
   render() {
@@ -19,20 +20,12 @@ class Receive extends Component {
                 {this.props.neo} <span>NEO</span>{" "}
               </p>
             </div>
-            <div className="col-xs-4">
-              <div id="gas-gauge">
-                <div id="gas-button">
-                  <span class="gas-claim">
-                    Claim Gas<br />
-                    0.000000
-                  </span>
-                </div>
-              </div>
-            </div>
+            <div className="col-xs-4">{<Claim />}</div>
             <div className="col-xs-4">
               <p className="neo-balance">Available GAS</p>
               <p className="gas-text">
-                {this.props.gas} <span>GAS</span>
+                {Math.floor(this.props.gas * 1000000) / 1000000}{" "}
+                <span>GAS</span>
               </p>
             </div>
           </div>
@@ -53,11 +46,28 @@ class Receive extends Component {
         <div className="row">
           <p className="address">{this.props.address}</p>
           <p className="info">Send NEO or GAS to this address ONLY.</p>
-          <div className="dash-icon-bar">
-            <img src={copyIcon} alt="" width="48" className="copy-icon" />
-            <img src={printIcon} alt="" width="48" className="print-icon" />
-            <img src={emailIcon} alt="" width="48" className="email-icon" />
-            <img src={linkIcon} alt="" width="48" className="link-icon" />
+
+          <div className="dash-bar top-50">
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-copy" />
+              </div>
+              Copy Public Address
+            </div>
+
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-print" />
+              </div>
+              Print Paper Wallet
+            </div>
+
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-link" />
+              </div>
+              View On Blockchain
+            </div>
           </div>
         </div>
       </div>
