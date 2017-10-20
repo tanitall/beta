@@ -14,7 +14,9 @@ Copyright 2017 Blockchain Services Limited (Trinidad and Tobago)
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU [General Public License](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.md) for more details.
+    GNU [General Public License] for more details.
+    
+    https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.md
 
 ## Credit
 
