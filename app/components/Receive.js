@@ -20,31 +20,32 @@ class Receive extends Component {
               </p>
             </div>
             <div className="col-xs-4">
-            <div id="gas-gauge">
-              <div id="gas-button">
-                <span class="gas-claim">
-                  Claim Gas<br />
-                  0.000000
-                </span>
-              </div>
+              <div id="gas-gauge">
+                <div id="gas-button">
+                  <span class="gas-claim">
+                    Claim Gas<br />
+                    0.000000
+                  </span>
+                </div>
               </div>
             </div>
             <div className="col-xs-4">
               <p className="neo-balance">Available GAS</p>
-              <p className="gas-text">{this.props.gas} <span>GAS</span></p>
+              <p className="gas-text">
+                {this.props.gas} <span>GAS</span>
+              </p>
             </div>
           </div>
         </div>
         <div className="row">
-        <div className="col-xs-4">
-        </div>
+          <div className="col-xs-4" />
           <div className="col-xs-4">
-          <br />
-          <h2>Receive NEO/GAS</h2>
-          <div className="center-qr">
-            <div className="addressBox-send">
-              <QRCode size={180} value={"this.props.address"} />
-            </div>
+            <br />
+            <h2>Receive NEO/GAS</h2>
+            <div className="center-qr">
+              <div className="addressBox-send">
+                <QRCode size={180} value={this.props.address} />
+              </div>
             </div>
           </div>
         </div>
@@ -53,10 +54,10 @@ class Receive extends Component {
           <p className="address">{this.props.address}</p>
           <p className="info">Send NEO or GAS to this address ONLY.</p>
           <div className="dash-icon-bar">
-          <img src={copyIcon} alt="" width="48" className="copy-icon" />
-          <img src={printIcon} alt="" width="48" className="print-icon" />
-          <img src={emailIcon} alt="" width="48" className="email-icon" />
-          <img src={linkIcon} alt="" width="48" className="link-icon" />
+            <img src={copyIcon} alt="" width="48" className="copy-icon" />
+            <img src={printIcon} alt="" width="48" className="print-icon" />
+            <img src={emailIcon} alt="" width="48" className="email-icon" />
+            <img src={linkIcon} alt="" width="48" className="link-icon" />
           </div>
         </div>
       </div>
