@@ -2,7 +2,7 @@
 
   1. **Create a new wallet**
   
-     a). Can sucessfully generate new private key and NEP2 encrypted version given password
+     a). Can successfully generate new private key and NEP2 encrypted version given password
      
      b). Gives user feedback if password do not match
      
@@ -46,7 +46,7 @@
      
      c). Gives feedback if private key entered is not valid
      
-     d). Generates encryped key succesfully under NEP2 otherwise
+     d). Generates encrypted key successfully under NEP2 otherwise
      
   6. **Settings page**
   
@@ -76,7 +76,7 @@
      
      i). Transaction history updates correctly with all above interactions
      
-     j). Able to swtich between MainNet and TestNet, balance updates accordingly
+     j). Able to switch between MainNet and TestNet, balance updates accordingly
      
      k). Replicate send tests on both MainNet and TestNet
      
