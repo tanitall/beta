@@ -18,7 +18,7 @@ Execute these commands in the project's root directory:
 
 ## License
 
-Morpheus wallet is released under the Apache License. Please refer to the [LICENSE](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.txt) file that accompanies this project for more information including complete terms and conditions.
+Morpheus Wallet is released under the Apache License. Please refer to the [LICENSE](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.txt) file that accompanies this project for more information including complete terms and conditions.
 
 ## Credits
 This application uses Open Source components under the MIT License agreement. You can find the source code of their open source projects along with license information below. We would like to acknowledge Ethan Fast and the developers at City of Zion for their contributions to open source and making projects like this possible.
