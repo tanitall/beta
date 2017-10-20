@@ -1,5 +1,7 @@
 # Morpheus
 
+(Please note that this software is currently under development. Use with caution. This repo may not contain the most recent version.)
+
 ## Required Tools and Dependencies
 
   - Node (This project uses the current LTS node version, which is `v6.11.0`)
