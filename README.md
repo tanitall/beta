@@ -1,6 +1,6 @@
 # Morpheus Wallet
 
-*(Use with caution. This software is currently under development. This repo may not contain the most recent version.)*
+*(Use with caution. This software is currently under development. This repo may not contain the most recent version. Please refer to the [release checksheet](https://github.com/MorpheusWallet/Morpheus/blob/master/release-checklist.md) for software specifications)*
 
 ## Required Tools and Dependencies
 
@@ -20,8 +20,9 @@ Execute these commands in the project's root directory:
 
 Morpheus Wallet is released under the Apache License. Please refer to the [LICENSE](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.txt) file that accompanies this project for more information including complete terms and conditions.
 
-## Credits
-This application uses Open Source components under the MIT License agreement. You can find the source code of their open source projects along with license information below. We would like to acknowledge Ethan Fast and the developers at City of Zion for their contributions to open source and making projects like this possible.
+## Credit
+
+This application uses Open Source components under the MIT License agreement created by Ethan Fast and City of Zion (COZ) Dev Team. You can find the source code of their open source projects along with license information below. We would like to thank and acknowledge Ethan Fast and the developers at City of Zion (COZ) for their contributions to open source and making projects like this possible.
 
  - Project: [NEON Wallet](https://github.com/CityOfZion/neon-wallet)
  - Developers: [Ethan Fast](https://github.com/Ejhfast) and [CoZ](https://github.com/CityOfZion)
