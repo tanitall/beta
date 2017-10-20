@@ -19,6 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Credit
 
+This application is product of Blockchain Services Limited (Trinidad and Tobago). A Limited Liability Company registred in the Republic of Trinidad and Tobago. Company registration number C2017081006407.
+
 This application uses Open Source components under the MIT License agreement created by Ethan Fast and City of Zion (COZ) Dev Team. You can find the source code of their open source projects along with license information below. We would like to thank and acknowledge Ethan Fast and the developers at City of Zion (COZ) for their contributions to open source and making projects like this possible.
 
  - Project: [NEON Wallet](https://github.com/CityOfZion/neon-wallet)
