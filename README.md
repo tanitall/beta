@@ -46,6 +46,7 @@ Beautiful charts and graphs give you an overview of your assets and portfolio pe
 ## Send and Receive for Free
 
 Send and receive NEO and GAS for free with Morpheus. Access your public address, print your public wallet information, send an email or link to your public address on the NEO blockchain.
+
 -----
 
 *(This document may change without notice.)*
