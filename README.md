@@ -4,7 +4,8 @@
 
 ## Alpha Releases
 
-Mac OSX (Stable on Live net)
+Mac OSX V.0.0.35
+(Stable on Live net)
 [Morpheus Wallet Alpha v0.0.35](https://www.dropbox.com/s/4df8st7ly0fybtj/Morpheus-0.0.35-mac.zip?dl=0)
  - DO NOT SEND NEO
  - FOR INTERNAL DEMO USE ONLY
