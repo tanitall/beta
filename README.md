@@ -1,6 +1,6 @@
 # Morpheus Wallet
 
-*(Use with caution. This software is currently under development. This repo may not contain the most recent version. Please refer to the [release checksheet](https://github.com/MorpheusWallet/Morpheus/blob/master/release-checklist.md) for software specifications)*
+*(Use with caution. This software is currently under development. This repo may not contain the most recent version. Please refer to the [release checklist](https://github.com/MorpheusWallet/Morpheus/blob/master/release-checklist.md) for software specification.)*
 
 ## Required Tools and Dependencies
 
