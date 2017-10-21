@@ -184,7 +184,7 @@ let Send = ({
           {selectedAsset}
         </div>
         <ReactTooltip
-          class="solidTip"
+          className="solidTip"
           id="assetTip"
           place="bottom"
           type="dark"

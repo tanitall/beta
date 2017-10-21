@@ -160,7 +160,7 @@ class DisplayWalletKeys extends Component {
                       <button className="btn btn-form btn-mini">Back</button>
                     </Link> */}
                       <ReactTooltip
-                        class="solidTip"
+                        className="solidTip"
                         id="copyPublicKeyTip"
                         place="bottom"
                         type="dark"
@@ -169,7 +169,7 @@ class DisplayWalletKeys extends Component {
                         <span>Copy Public Key</span>
                       </ReactTooltip>
                       <ReactTooltip
-                        class="solidTip"
+                        className="solidTip"
                         id="copyPrivateKeyTip"
                         place="bottom"
                         type="dark"
@@ -178,7 +178,7 @@ class DisplayWalletKeys extends Component {
                         <span>Copy Private Key</span>
                       </ReactTooltip>
                       <ReactTooltip
-                        class="solidTip"
+                        className="solidTip"
                         id="copyPassphraseTip"
                         place="bottom"
                         type="dark"
@@ -187,7 +187,7 @@ class DisplayWalletKeys extends Component {
                         <span>Copy Password</span>
                       </ReactTooltip>
                       <ReactTooltip
-                        class="solidTip"
+                        className="solidTip"
                         id="copyPassphraseKeyTip"
                         place="bottom"
                         type="dark"
@@ -232,7 +232,7 @@ class DisplayWalletKeys extends Component {
                   </div>
                   <div className="row">
                   <div className="col-xs-12" style={{ margin: 0, padding: 0 }}>
-                  <label class="checkbox-inline" style={{ color: "white" }}>
+                  <label className="checkbox-inline" style={{ color: "white" }}>
                     I have backed up my password and understand it will not be shown to me again.
                   </label>
                   <input

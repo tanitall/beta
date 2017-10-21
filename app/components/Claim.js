@@ -102,7 +102,7 @@ class Claim extends Component {
             </div>
           </div>
           <ReactTooltip
-            class="solidTip"
+            className="solidTip"
             id="claimTip"
             place="bottom"
             type="dark"

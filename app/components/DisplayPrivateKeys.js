@@ -102,7 +102,7 @@ class DisplayWalletKeys extends Component {
               ) : (
                 <div />
               )}
-              <label class="checkbox-inline" style={{ color: "white" }}>
+              <label className="checkbox-inline" style={{ color: "white" }}>
                 I have backed up my private data
               </label>
               <input
@@ -179,7 +179,7 @@ class DisplayWalletKeys extends Component {
                         </div>
 
                         <ReactTooltip
-                          class="solidTip"
+                          className="solidTip"
                           id="copyPublicKeyTip"
                           place="bottom"
                           type="dark"
@@ -188,7 +188,7 @@ class DisplayWalletKeys extends Component {
                           <span>Copy Public Key</span>
                         </ReactTooltip>
                         <ReactTooltip
-                          class="solidTip"
+                          className="solidTip"
                           id="copyPrivateKeyTip"
                           place="bottom"
                           type="dark"
@@ -197,7 +197,7 @@ class DisplayWalletKeys extends Component {
                           <span>Copy Private Key</span>
                         </ReactTooltip>
                         <ReactTooltip
-                          class="solidTip"
+                          className="solidTip"
                           id="copyPassphraseTip"
                           place="bottom"
                           type="dark"
@@ -206,7 +206,7 @@ class DisplayWalletKeys extends Component {
                           <span>Copy Passphrase</span>
                         </ReactTooltip>
                         <ReactTooltip
-                          class="solidTip"
+                          className="solidTip"
                           id="copyPassphraseKeyTip"
                           place="bottom"
                           type="dark"
