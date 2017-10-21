@@ -167,9 +167,9 @@ let Send = ({
         </div>
         <div className="col-xs-4">
         <div id="sendAddress">
-        <div className="btn-sm">MIN</div>
-        <div className="btn-sm">HALF</div>
-        <div className="btn-sm">MAX</div>
+        <div className="btn-sm blue">MIN</div>
+        <div className="btn-sm blue">HALF</div>
+        <div className="btn-sm blue">MAX</div>
         </div>
         </div>
         <div className="col-xs-2">
