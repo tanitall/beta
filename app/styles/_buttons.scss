@@ -271,3 +271,26 @@
     );
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+.blue:hover, .blue:active, .blue:checked {
+  background: rgb(36, 180, 245);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(36, 180, 245, 1) 0%,
+    rgba(0, 32, 228, 1) 92%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(36, 180, 245, 1) 0%,
+    rgba(0, 32, 228, 1) 92%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 180, 245, 1) 0%,
+    rgba(0, 32, 228, 1) 92%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

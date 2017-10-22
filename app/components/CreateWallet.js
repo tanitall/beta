@@ -147,6 +147,14 @@ class CreateWallet extends Component {
               </div>
             </Link>
 
+            <Link to="/">
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-lock"></span>
+              </div>
+              Login Via Encrypted Key
+            </div>
+            </Link>
             <div
               className="dash-icon-bar"
               onClick={() => loadKeyRecovery(this.props.dispatch)}

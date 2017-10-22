@@ -115,7 +115,7 @@ class LoginLocalStorage extends Component {
                         ref={node => (wif_input = node)}
                       >
                         <option selected="selected" disabled="disabled">
-                          Select a wallet from backup
+                          Select a saved wallet
                         </option>
                         {_.map(this.props.accountKeys, (value, key) => (
                           <option value={value}>{key}</option>
@@ -153,7 +153,7 @@ class LoginLocalStorage extends Component {
             <Link to="/create">
             <div className="dash-icon-bar">
               <div className="icon-border">
-                <span className="glyphicon glyphicon-star"></span>
+                <span className="glyphicon glyphicon-plus"></span>
               </div>
               Create a Neo Address
             </div>
@@ -164,6 +164,14 @@ class LoginLocalStorage extends Component {
                 <span className="glyphicon glyphicon-qrcode"></span>
               </div>
               Login Via Private Key
+            </div>
+            </Link>
+            <Link to="/">
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-lock"></span>
+              </div>
+              Login Via Encrypted Key
             </div>
             </Link>
             <Link to="/settings">

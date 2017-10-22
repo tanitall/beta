@@ -61,7 +61,7 @@ class WalletInfo extends Component {
             </span>
           </div>
           <ReactTooltip
-            class="solidTip"
+            className="solidTip"
             id="copyAddressTip"
             place="bottom"
             type="dark"
@@ -100,7 +100,7 @@ class WalletInfo extends Component {
             >
               <MdSync id="refresh" data-tip data-for="refreshBalanceTip" />
               <ReactTooltip
-                class="solidTip"
+                className="solidTip"
                 id="refreshBalanceTip"
                 place="bottom"
                 type="dark"

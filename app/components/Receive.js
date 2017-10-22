@@ -30,27 +30,21 @@ class Receive extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-4" />
-          <div className="col-xs-4">
-            <br />
-            <h2>Receive NEO/GAS</h2>
-            <div className="center-qr">
-              <div className="addressBox-send">
-                <QRCode size={180} value={this.props.address} />
-              </div>
-            </div>
+        <div className="row top-20">
+          <h2>Receive NEO/GAS</h2>
+          <div className="addressBox-send center">
+            <QRCode size={180} value={this.props.address} />
           </div>
-        </div>
+          <div className="row">
+            <p className="address">{this.props.address}</p>
+            <p className="info">Send NEO or GAS to this address ONLY.</p>
 
-        <div className="row">
-          <p className="address">{this.props.address}</p>
-          <p className="info">Send NEO or GAS to this address ONLY.</p>
-
-          <div className="dash-bar top-50">
-            <div className="dash-icon-bar">
-              <div className="icon-border">
-                <span className="glyphicon glyphicon-copy" />
+            <div className="dash-bar top-20">
+              <div className="dash-icon-bar">
+                <div className="icon-border">
+                  <span className="glyphicon glyphicon-duplicate" />
+                </div>
+                Copy Public Address
               </div>
               Copy Public Address
             </div>
