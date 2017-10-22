@@ -5,11 +5,23 @@ import { Link } from "react-router";
 import Power from "react-icons/lib/md/power-settings-new";
 import ReactTooltip from "react-tooltip";
 
-
-let Logout = ({dispatch}) =>
-  <div id="logout" data-tip data-for="logoutTip" onClick={() => dispatch(logout())}>
-    <Link to="/"><button className="btn">Log Out</button></Link>
-    <ReactTooltip className="solidTip" id="logoutTip" place="bottom" type="dark" effect="solid">
+let Logout = ({ dispatch }) => (
+  <div
+    id="logout"
+    data-tip
+    data-for="logoutTip"
+    onClick={() => dispatch(logout())}
+  >
+    <Link to="/">
+      <button className="btn">Log Out</button>
+    </Link>
+    <ReactTooltip
+      class="solidTip"
+      id="logoutTip"
+      place="bottom"
+      type="dark"
+      effect="solid"
+    >
       <span>Exit to login screen</span>
     </ReactTooltip>
   </div>

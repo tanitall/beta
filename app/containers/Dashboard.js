@@ -68,6 +68,8 @@ class Dashboard extends Component {
                 <Logo width={90} />
               </div>
 
+              <NetworkSwitch />
+
               <div id="balance">
                 <span style={{ fontSize: "10px" }}>Combined Value</span>
                 <br />
@@ -77,36 +79,36 @@ class Dashboard extends Component {
             <div className="clearfix" />
             <div className="navbar-collapse collapse">
               <ul className="nav navbar-nav">
-              <li>
-                <Link to={"/dashboard"} exact activeClassName="active">
-                  <div className="glyphicon glyphicon-user" /> Dashboard
-                </Link>
-              </li>
-              <li>
-                <Link to={"/send"} exact activeClassName="active">
-                  <span className="glyphicon glyphicon-send" /> Send
-                </Link>
-              </li>
-              <li>
-                <Link to={"/receive"} exact activeClassName="active">
-                  <span className="glyphicon glyphicon-qrcode" /> Receive
-                </Link>
-              </li>
-              <li>
-                <Link to={"/exchange"} exact activeClassName="active">
-                  <span className="glyphicon glyphicon-refresh" /> Exchange
-                </Link>
-              </li>
-              <li>
-                <Link to={"/history"} exact activeClassName="active">
-                  <span className="glyphicon glyphicon-list-alt" /> History
-                </Link>
-              </li>
-              <li>
-                <Link to={"/settings"} exact activeClassName="active">
-                  <span className="glyphicon glyphicon-lock" /> Settings
-                </Link>
-              </li>
+                <li>
+                  <Link to={"/dashboard"} exact activeClassName="active">
+                    <div className="glyphicon glyphicon-user" /> Dashboard
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/send"} exact activeClassName="active">
+                    <span className="glyphicon glyphicon-send" /> Send
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/receive"} exact activeClassName="active">
+                    <span className="glyphicon glyphicon-qrcode" /> Receive
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/exchange"} exact activeClassName="active">
+                    <span className="glyphicon glyphicon-refresh" /> Exchange
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/history"} exact activeClassName="active">
+                    <span className="glyphicon glyphicon-list-alt" /> History
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/settings"} exact activeClassName="active">
+                    <span className="glyphicon glyphicon-lock" /> Settings
+                  </Link>
+                </li>
               </ul>
               <Logout />
             </div>
