@@ -272,7 +272,7 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.blue:hover {
+.blue:hover, .blue:active, .blue:checked {
   background: rgb(36, 180, 245);
   /* Old browsers */
   background: -moz-linear-gradient(
