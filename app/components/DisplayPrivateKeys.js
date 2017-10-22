@@ -55,14 +55,14 @@ class DisplayWalletKeys extends Component {
 
   render = () => (
     <div className="displayWalletKeys">
-    <div className="row send-neo-wide">
-    <div className="center neoLogo up-20">
-      <NeoLogo width={115} />
-    </div>
-          <div className="row">
-            <div className="col-xs-12">
-              <div className="row">
-                <div className="col-xs-3">
+      <div className="row send-neo-wide">
+        <div className="center neoLogo up-20">
+          <NeoLogo width={115} />
+        </div>
+        <div className="row">
+          <div className="col-xs-12">
+            <div className="row">
+              <div className="col-xs-3">
                 <canvas
                   id="publicCanvas"
                   style={{
@@ -71,22 +71,17 @@ class DisplayWalletKeys extends Component {
                   }}
                   ref={node => (this.publicCanvas = node)}
                 />
-                <p style={{ textAlign: "center" }}>
-                  Public QR Address
-                </p>
-                </div>
+                <p style={{ textAlign: "center" }}>Public QR Address</p>
+              </div>
 
-                <div className="col-xs-6 top-20">
+              <div className="col-xs-6 top-20">
                 <div className="keyList">
                   {/* public address */}
                   <div className="keyListItem">
-                    <p className="key-label">
-                      Your Public NEO Address:
-                    </p>
+                    <p className="key-label">Your Public NEO Address:</p>
                     <input
                       type="text"
-                      onClick={() =>
-                        clipboard.writeText(this.props.address)}
+                      onClick={() => clipboard.writeText(this.props.address)}
                       className="form-control pubicAddress"
                       contentEditable={false}
                       readOnly={true}
@@ -101,16 +96,14 @@ class DisplayWalletKeys extends Component {
                     <p className="key-label">Your Password:</p>
                     <input
                       type="text"
-                      onClick={() =>
-                        clipboard.writeText(this.props.passphrase)}
+                      onClick={() => clipboard.writeText(this.props.passphrase)}
                       className="form-control"
                       contentEditable={false}
                       readOnly={true}
                       value={this.props.passphrase}
                       data-tip
                       data-for="copyPassphraseTip"
-                      onClick={() =>
-                        clipboard.writeText(this.props.passphrase)}
+                      onClick={() => clipboard.writeText(this.props.passphrase)}
                     />
                   </div>
                   {/* secrect phrase */}
@@ -152,34 +145,31 @@ class DisplayWalletKeys extends Component {
                 >
                   <span>Copy Password Encrypted Key</span>
                 </ReactTooltip>
-                </div>
+              </div>
 
-                      <div className="col-xs-3">
-                        <div className="addressBox">
-                          <canvas
-                            id="privateCanvas"
-                            height={160}
-                            width={160}
-                            style={{
-                              border: "10px solid #D3D3D3",
-                              borderRadius: 30,
-                              height: "160px !important",
-                              width: "160px !important"
-                            }}
-                            ref={node => (this.privateCanvas = node)}
-                          />
+              <div className="col-xs-3">
+                <div className="addressBox">
+                  <canvas
+                    id="privateCanvas"
+                    height={160}
+                    width={160}
+                    style={{
+                      border: "10px solid #D3D3D3",
+                      borderRadius: 30,
+                      height: "160px !important",
+                      width: "160px !important"
+                    }}
+                    ref={node => (this.privateCanvas = node)}
+                  />
 
-                          <p style={{ textAlign: "center" }}>
-                            Encrypted Private Key
-                          </p>
-                        </div>
+                  <p style={{ textAlign: "center" }}>Encrypted Private Key</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="private">
-              <div className="keyList">
-
+          <div className="private">
+            <div className="keyList">
               {/* Your Encrypted Private Key*/}
               <div className="col-xs-6">
                 <p className="key-label">Your Private Key:</p>
@@ -195,99 +185,97 @@ class DisplayWalletKeys extends Component {
                 />
               </div>
 
-                {/* Your Encrypted Private Key*/}
-                <div className="col-xs-6">
-                  <p className="key-label">Your Encrypted Private Key:</p>
-                  <input
-                    type="text"
-                    onClick={() => clipboard.writeText(this.props.address)}
-                    className="form-control"
-                    contentEditable={false}
-                    readOnly={true}
-                    value={this.props.passphraseKey}
-                    data-tip
-                    data-for="copyPassphraseKeyTip"
-                  />
-                </div>
-                  <div className="col-xs-9 top-20">
-                    <input
-                      type="text"
-                      className="form-control saveKey"
-                      ref={node => (key_name = node)}
-                      placeholder="Name your saved wallet"
-                      data-tip
-                    />
-                  </div>
-                  <div className="col-xs-3 top-20">
-                    <button
-                      onClick={() =>
-                        saveKey(
-                          this.props.dispatch,
-                          this.props.passphraseKey,
-                          this.props.history
-                        )}
-                      className="btn-send"
-                    >
-                      Save Wallet
-                    </button>
-
-                    {this.props.decrypting === true ? (
-                      <div className="decrypting">Decrypting keys...</div>
-                    ) : (
-                      <div />
+              {/* Your Encrypted Private Key*/}
+              <div className="col-xs-6">
+                <p className="key-label">Your Encrypted Private Key:</p>
+                <input
+                  type="text"
+                  onClick={() => clipboard.writeText(this.props.address)}
+                  className="form-control"
+                  contentEditable={false}
+                  readOnly={true}
+                  value={this.props.passphraseKey}
+                  data-tip
+                  data-for="copyPassphraseKeyTip"
+                />
+              </div>
+              <div className="col-xs-9 top-20">
+                <input
+                  type="text"
+                  className="form-control saveKey"
+                  ref={node => (key_name = node)}
+                  placeholder="Name your saved wallet"
+                  data-tip
+                />
+              </div>
+              <div className="col-xs-3 top-20">
+                <button
+                  onClick={() =>
+                    saveKey(
+                      this.props.dispatch,
+                      this.props.passphraseKey,
+                      this.props.history
                     )}
-                  </div>
-                  <div className="col-xs-8">
-                  <label className="checkbox-inline" style={{ color: "white" }}>
-                    I have backed up my private data
-                  </label>
-                  <input
-                    id="checkbox"
-                    name="isChecked"
-                    type="checkbox"
-                    className="pull-left"
-                  />
-                  </div>
+                  className="btn-send"
+                >
+                  Save Wallet
+                </button>
+
+                {this.props.decrypting === true ? (
+                  <div className="decrypting">Decrypting keys...</div>
+                ) : (
+                  <div />
+                )}
+              </div>
+              <div className="col-xs-8">
+                <label className="checkbox-inline" style={{ color: "white" }}>
+                  I have backed up my private data
+                </label>
+                <input
+                  id="checkbox"
+                  name="isChecked"
+                  type="checkbox"
+                  className="pull-left"
+                />
               </div>
             </div>
           </div>
-    </div>
-
-    <div className="dash-bar">
-
-    <div className="dash-icon-bar" onClick={() => print()} >
-      <div className="icon-border">
-        <span className="glyphicon glyphicon-print"></span>
+        </div>
       </div>
-      Print Wallet Data
-    </div>
 
-    <div className="dash-icon-bar">
-      <div className="icon-border">
-        <span className="glyphicon glyphicon-download-alt"></span>
+      <div className="dash-bar">
+        <div className="dash-icon-bar" onClick={() => print()}>
+          <div className="icon-border">
+            <span className="glyphicon glyphicon-print" />
+          </div>
+          Print Wallet Data
+        </div>
+
+        <div className="dash-icon-bar">
+          <div className="icon-border">
+            <span className="glyphicon glyphicon-download-alt" />
+          </div>
+          Download Recovery File
+        </div>
+
+        <Link to="/">
+          <div className="dash-icon-bar">
+            <div className="icon-border">
+              <span className="glyphicon glyphicon-qrcode" />
+            </div>
+            Login Via Private Key
+          </div>
+        </Link>
+
+        <Link to="/">
+          <div className="dash-icon-bar">
+            <div className="icon-border">
+              <span className="glyphicon glyphicon-lock" />
+            </div>
+            Login Via Encrypted Key
+          </div>
+        </Link>
       </div>
-      Download Recovery File
-    </div>
-
-    <Link to="/">
-    <div className="dash-icon-bar">
-      <div className="icon-border">
-        <span className="glyphicon glyphicon-qrcode"></span>
-      </div>
-      Login Via Private Key
-    </div>
-    </Link>
-
-    <Link to="/">
-    <div className="dash-icon-bar">
-      <div className="icon-border">
-        <span className="glyphicon glyphicon-lock"></span>
-      </div>
-      Login Via Encrypted Key
-    </div>
-    </Link>
-
-    </div>
     </div>
   );
 }

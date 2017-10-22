@@ -6,7 +6,7 @@ import copyIcon from "../images/copy-icon.png";
 import printIcon from "../images/print-icon.png";
 import emailIcon from "../images/email-icon.png";
 import linkIcon from "../images/link-icon.png";
-import Claim from "./Claim.js";
+import Claim from "./Claim";
 
 class Receive extends Component {
   render() {
@@ -20,50 +20,49 @@ class Receive extends Component {
                 {this.props.neo} <span>NEO</span>{" "}
               </p>
             </div>
-            <div className="col-xs-4">
-            {<Claim />}
-            </div>
+            <div className="col-xs-4">{<Claim />}</div>
             <div className="col-xs-4">
               <p className="neo-balance">Available GAS</p>
-              <p className="gas-text">{Math.floor(this.props.gas * 1000000) / 1000000} <span>GAS</span></p>
+              <p className="gas-text">
+                {Math.floor(this.props.gas * 1000000) / 1000000}{" "}
+                <span>GAS</span>
+              </p>
             </div>
           </div>
         </div>
         <div className="row top-20">
-        <h2>Receive NEO/GAS</h2>
-        <div className="addressBox-send center">
-          <QRCode size={180} value={this.props.address} />
-        </div>
-        <div className="row">
-          <p className="address">{this.props.address}</p>
-          <p className="info">Send NEO or GAS to this address ONLY.</p>
+          <h2>Receive NEO/GAS</h2>
+          <div className="addressBox-send center">
+            <QRCode size={180} value={this.props.address} />
+          </div>
+          <div className="row">
+            <p className="address">{this.props.address}</p>
+            <p className="info">Send NEO or GAS to this address ONLY.</p>
 
-
-          <div className="dash-bar top-20">
+            <div className="dash-bar top-20">
               <div className="dash-icon-bar">
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-duplicate" />
                 </div>
                 Copy Public Address
               </div>
+              Copy Public Address
+            </div>
 
-
-              <div className="dash-icon-bar">
-                <div className="icon-border">
-                  <span className="glyphicon glyphicon-print" />
-                </div>
-                Print Paper Wallet
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-print" />
               </div>
+              Print Paper Wallet
+            </div>
 
-              <div className="dash-icon-bar">
-                <div className="icon-border">
-                  <span className="glyphicon glyphicon-link" />
-                </div>
-                View On Blockchain
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-link" />
               </div>
-
+              View On Blockchain
+            </div>
           </div>
-        </div>
         </div>
       </div>
     );

@@ -148,12 +148,12 @@ class CreateWallet extends Component {
             </Link>
 
             <Link to="/">
-            <div className="dash-icon-bar">
-              <div className="icon-border">
-                <span className="glyphicon glyphicon-lock"></span>
+              <div className="dash-icon-bar">
+                <div className="icon-border">
+                  <span className="glyphicon glyphicon-lock" />
+                </div>
+                Login Via Encrypted Key
               </div>
-              Login Via Encrypted Key
-            </div>
             </Link>
             <div
               className="dash-icon-bar"

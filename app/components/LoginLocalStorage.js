@@ -77,20 +77,18 @@ class LoginLocalStorage extends Component {
     return (
       <div>
         <div className="login-address-bk top-50">
-
-        <div className="logo-top">
-          <div className="row">
-            <div className="center logobounce">
-              <Logo width={140} />
+          <div className="logo-top">
+            <div className="row">
+              <div className="center logobounce">
+                <Logo width={140} />
+              </div>
             </div>
-          </div>
 
             <div className="row">
               <div className="col-xs-10 col-xs-offset-1">
-                <div><br />
-                  <h1 className="center">
-                    Welcome to Morpheus
-                  </h1>
+                <div>
+                  <br />
+                  <h1 className="center">Welcome to Morpheus</h1>
                 </div>
                 <div className="row top-60">
                   <div className="col-xs-10 col-xs-offset-1">
@@ -126,64 +124,63 @@ class LoginLocalStorage extends Component {
                   <div className="col-xs-3">
                     <div className="">
                       {Object.keys(this.props.accountKeys).length === 0 ? (
-                        <div className="go-icon">
-                        </div>
+                        <div className="go-icon" />
                       ) : (
                         <div
                           className="go-icon"
-                          onClick={e => onWifChange(dispatch, this.props.history)}
-                        >
-                        </div>
+                          onClick={e =>
+                            onWifChange(dispatch, this.props.history)}
+                        />
                       )}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-            <div className="" />
-
-            {this.props.decrypting === true ? (
-              <div className="decrypting">Decrypting keys...</div>
-            ) : (
-              <div />
-            )}
           </div>
-          <div className="dash-bar top-50">
-            <Link to="/create">
+          <div className="" />
+
+          {this.props.decrypting === true ? (
+            <div className="decrypting">Decrypting keys...</div>
+          ) : (
+            <div />
+          )}
+        </div>
+        <div className="dash-bar top-50">
+          <Link to="/create">
             <div className="dash-icon-bar">
               <div className="icon-border">
-                <span className="glyphicon glyphicon-plus"></span>
+                <span className="glyphicon glyphicon-plus" />
               </div>
               Create a Neo Address
             </div>
-            </Link>
-            <Link to="/">
+          </Link>
+          <Link to="/">
             <div className="dash-icon-bar">
               <div className="icon-border">
-                <span className="glyphicon glyphicon-qrcode"></span>
+                <span className="glyphicon glyphicon-qrcode" />
               </div>
               Login Via Private Key
             </div>
-            </Link>
-            <Link to="/">
+          </Link>
+          <Link to="/">
             <div className="dash-icon-bar">
               <div className="icon-border">
-                <span className="glyphicon glyphicon-lock"></span>
+                <span className="glyphicon glyphicon-lock" />
               </div>
               Login Via Encrypted Key
             </div>
-            </Link>
-            <Link to="/settings">
+          </Link>
+          <Link to="/settings">
             <div className="dash-icon-bar">
               <div className="icon-border">
-                <span className="glyphicon glyphicon-paperclip"></span>
+                <span className="glyphicon glyphicon-paperclip" />
               </div>
               Login Via Recovery File
             </div>
-            </Link>
-          </div>
+          </Link>
         </div>
+      </div>
     );
   };
 }
