@@ -39,7 +39,7 @@ class Receive extends Component {
             <p className="address">{this.props.address}</p>
             <p className="info">Send NEO or GAS to this address ONLY.</p>
 
-            <div className="dash-bar top-20">
+            <div className="dash-bar-rec top-20">
               <div className="dash-icon-bar">
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-duplicate" />
