@@ -117,11 +117,21 @@ let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
       <Link to="/create">
         <div className="dash-icon-bar">
           <div className="icon-border">
-            <span className="glyphicon glyphicon-star" />
+            <span className="glyphicon glyphicon-plus" />
           </div>
           Create a Neo Address
         </div>
       </Link>
+
+      <Link to="/">
+      <div className="dash-icon-bar">
+        <div className="icon-border">
+          <span className="glyphicon glyphicon-lock"></span>
+        </div>
+        Login Via Encrypted Key
+      </div>
+      </Link>
+
       <Link to="/LoginLocalStorage">
         <div className="dash-icon-bar">
           <div className="icon-border">

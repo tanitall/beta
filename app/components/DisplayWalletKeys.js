@@ -273,7 +273,14 @@ class DisplayWalletKeys extends Component {
               </div>
               Download Recovery File
             </div>
-
+            <Link to="/">
+            <div className="dash-icon-bar">
+              <div className="icon-border">
+                <span className="glyphicon glyphicon-chevron-left"></span>
+              </div>
+              Back to Login Options
+            </div>
+            </Link>
             </div>
 </div>
     );
