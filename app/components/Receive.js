@@ -42,7 +42,7 @@ class Receive extends Component {
           <div className="dash-bar top-20">
               <div className="dash-icon-bar">
                 <div className="icon-border">
-                  <span className="glyphicon glyphicon-copy" />
+                  <span className="glyphicon glyphicon-duplicate" />
                 </div>
                 Copy Public Address
               </div>
