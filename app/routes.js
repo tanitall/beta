@@ -6,6 +6,7 @@ import LoginPrivateKey from "./components/LoginPrivateKey";
 import Home from "./components/Home";
 import Settings from "./components/Settings";
 import LoginLocalStorage from "./components/LoginLocalStorage";
+import TransactionHistory from "./components/TransactionHistory";
 import CreateWallet from "./components/CreateWallet";
 import EncryptKey from "./components/EncryptKey";
 import Send from "./components/Send";
@@ -22,7 +23,9 @@ export default (
     </Route>
     <Route path="/create" component={CreateWallet} />
     <Route path="/encryptKey" component={EncryptKey} />
+    <Route path="/LoginNep2" component={LoginNep2} />
     <IndexRoute component={LoginPrivateKey} />
+    <Route path="/transactionHistory" component={TransactionHistory} />
     <Route path="/loginLocalStorage" component={LoginLocalStorage} />
     <Route path="/LoginEncrypted" component={LoginNep2} />
     {/* <Route path="/settings" component={Settings} /> */}
