@@ -163,7 +163,7 @@ class LoginLocalStorage extends Component {
               Login Via Private Key
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/LoginNep2">
             <div className="dash-icon-bar">
               <div className="icon-border">
                 <span className="glyphicon glyphicon-lock" />
