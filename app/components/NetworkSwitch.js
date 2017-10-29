@@ -143,7 +143,7 @@ class NetworkSwitch extends Component {
       toggleNet(this.props.dispatch, this.props.net, this.props.address)}
     >
     <div className="icon-border">
-      <span className="glyphicon glyphicon-education" />
+      <span className="glyphicon glyphicon-exclamation-sign" />
     </div>
     <span className="transparent">Running on </span><span
       className="netName"

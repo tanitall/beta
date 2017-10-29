@@ -41,14 +41,16 @@ class Receive extends Component {
 
             <div className="dash-bar-rec top-20">
 
-              <div className="dash-icon-bar">
+              <div className="dash-icon-bar"
+              onClick={() => clipboard.writeText(this.props.address)}
+              >
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-duplicate" />
                 </div>
                 Copy Public Address
               </div>
 
-            <div className="dash-icon-bar">
+            <div className="dash-icon-bar" onClick={() => print()} >
               <div className="icon-border">
                 <span className="glyphicon glyphicon-print" />
               </div>
@@ -61,6 +63,7 @@ class Receive extends Component {
               </div>
               View On Blockchain
             </div>
+
             </div>
           </div>
         </div>

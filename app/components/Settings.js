@@ -11,6 +11,9 @@ import Logo from "./Brand/LogoBlank";
 import NeoLogo from "./Brand/Neo";
 import Claim from "./Claim";
 import { NetworkSwitch } from "../components/NetworkSwitch";
+import { clipboard } from "electron";
+import Copy from "react-icons/lib/md/content-copy";
+import ReactTooltip from "react-tooltip";
 
 let explorer_select;
 
@@ -157,12 +160,14 @@ class Settings extends Component {
   </div></Link>
 </div>
 <div className="col-xs-2 center">
+<Link to="/LoginLocalStorage">
 <div className="dash-icon-bar">
   <div className="icon-border">
     <span className="glyphicon glyphicon-user" />
   </div>
   Open a Saved Wallet
 </div>
+</Link>
 </div>
     </div>
     </div>
