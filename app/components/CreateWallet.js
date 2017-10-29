@@ -119,7 +119,7 @@ class CreateWallet extends Component {
 
                 <div className="col-xs-2">
                   <div
-                    className="go-icon"
+                    className="go-icon fadeInLeft"
                     onClick={() => generateNewWallet(this.props.dispatch)}
                   />
                 </div>
@@ -147,7 +147,7 @@ class CreateWallet extends Component {
               </div>
             </Link>
 
-            <Link to="/">
+            <Link to="/LoginNep2">
               <div className="dash-icon-bar">
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-lock" />

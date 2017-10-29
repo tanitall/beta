@@ -214,61 +214,6 @@ let Send = ({
 
             <div className="clearboth" />
 
-            <div id="sendAmount">
-              <div className="col-xs-6">
-                <img
-                  src={neoLogo}
-                  alt=""
-                  width="48"
-                  className="neo-logo logobounce"
-                />
-                <h2>Send Neo/Gas</h2>
-              </div>
-              <div className="col-xs-4">
-                <div id="sendAddress">
-                  <div className="btn-sm">MIN</div>
-                  <div className="btn-sm">HALF</div>
-                  <div className="btn-sm">MAX</div>
-                </div>
-              </div>
-              <div className="col-xs-2">
-                <div
-                  id="sendAsset"
-                  className={btnClass}
-                  style={{ width: "100%" }}
-                  data-tip
-                  //data-for="assetTip"
-                  onClick={() => dispatch(toggleAsset())}
-                >
-                  {selectedAsset}
-                </div>
-                <ReactTooltip
-                  class="solidTip"
-                  id="assetTip"
-                  place="bottom"
-                  type="dark"
-                  effect="solid"
-                >
-                  <span>Click To Switch</span>
-                </ReactTooltip>
-                {/* <p>Tap To Switch</p> */}
-              </div>
-              <div className="clearboth" />
-              <div className="glyphicon glyphicon-camera scanqr-cam" />
-              <div id="sendAddress">
-                <div className="col-xs-12">
-                  <input
-                    className={formClass}
-                    id="center"
-                    placeholder="Enter a valid NEO public address"
-                    ref={node => {
-                      sendAddress = node;
-                    }}
-                  />
-                </div>
-
-                <div className="clearboth" />
-
                 <div id="sendAmount">
                   <div className="col-xs-6">
                     <input
@@ -331,7 +276,6 @@ let Send = ({
           Confirm Transaction
         </button> */}
           </div>
-
           <div className="send-notice">
             <p>
               All NEO and GAS transactions are free. Only send NEO and GAS to a
@@ -341,8 +285,8 @@ let Send = ({
             </p>
           </div>
         </div>
-      </div>
-    </div>
+
+
   );
 };
 

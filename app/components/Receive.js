@@ -40,14 +40,13 @@ class Receive extends Component {
             <p className="info">Send NEO or GAS to this address ONLY.</p>
 
             <div className="dash-bar-rec top-20">
+
               <div className="dash-icon-bar">
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-duplicate" />
                 </div>
                 Copy Public Address
               </div>
-              Copy Public Address
-            </div>
 
             <div className="dash-icon-bar">
               <div className="icon-border">
@@ -61,6 +60,7 @@ class Receive extends Component {
                 <span className="glyphicon glyphicon-link" />
               </div>
               View On Blockchain
+            </div>
             </div>
           </div>
         </div>

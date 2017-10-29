@@ -8,6 +8,9 @@ import _ from "lodash";
 import fs from "fs";
 import storage from "electron-json-storage";
 import Logo from "./Brand/LogoBlank";
+import NeoLogo from "./Brand/Neo";
+import Claim from "./Claim";
+import { NetworkSwitch } from "../components/NetworkSwitch";
 
 let explorer_select;
 
@@ -103,87 +106,152 @@ class Settings extends Component {
   };
 
   render = () => (
-    <div id="settings" className="container">
-      <div className="description">
-        Manage your Morpheus wallet keys and settings
+    <div id="send">
+    <div className="row">
+      <div className="header">
+        <div className="col-xs-4">
+          <p className="neo-balance">Available Neo</p>
+          <p className="neo-text">
+            {this.props.neo} <span>NEO</span>{" "}
+          </p>
+        </div>
+        <div className="col-xs-4">{<Claim />}</div>
+        <div className="col-xs-4">
+          <p className="neo-balance">Available GAS</p>
+          <p className="gas-text">
+            {Math.floor(this.props.gas * 1000000) / 1000000}{" "}
+            <span>GAS</span>
+          </p>
+        </div>
       </div>
+    </div>
+    <div className="settings-panel">
+    <div className="description">
+      <h2 className="center">Manage your Morpheus Settings</h2>
+      <div className="row top-20">
+      <div className="col-xs-2 col-xs-offset-1 center">
+      <div className="dash-icon-bar">
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-lock" />
+      </div>
+      Enable Two Factor Authorization
+      </div>
+      </div>
+      <div className="col-xs-2 center">
+      <div className="dash-icon-bar">
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-check" />
+      </div>
+      Edit Authorized Addresses
+      </div>
+      </div>
+      <div className="col-xs-2 center">
+      <div className="dash-icon-bar">
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-education" />
+      </div>
+      <NetworkSwitch />
+      </div>
+    </div>
+  <div className="col-xs-2 center">
+  <Link to="/create"><div className="dash-icon-bar">
+  <div className="icon-border">
+    <span className="glyphicon glyphicon-plus" />
+  </div>
+  Create New Address
+  </div></Link>
+</div>
+<div className="col-xs-2 center">
+<div className="dash-icon-bar">
+  <div className="icon-border">
+    <span className="glyphicon glyphicon-user" />
+  </div>
+  Open a Saved Wallet
+</div>
+</div>
+    </div>
+    </div>
+    <div className="clearboth"></div>
+      <div className="row top-50">
+      <div className="col-xs-8 col-xs-offset-2">
       <div className="settingsForm row">
         <div className="settingsItem">
-          <div className="itemTitle">Saved Wallet Keys</div>
-          {_.map(this.props.wallets, (value, key) => {
-            return (
-              <div className="walletList">
-                <div className="walletItem">
-                  <div className="walletName">{key.slice(0, 20)}</div>
-                  <div className="walletKey">{value}</div>
-                  <div
-                    className="deleteWallet"
-                    onClick={() => deleteWallet(this.props.dispatch, key)}
-                  >
-                    <Delete />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <div className="col-xs-4">
-          <button
-            className="btn btn-form btn-warning btn-sm"
-            style={{
-              marginTop: 30,
-              fontWeight: 500,
-              lineHeight: 2
-            }}
-            onClick={() => saveKeyRecovery(this.props.wallets)}
+          <select
+            name="select-profession"
+            id="select-profession grey-bk"
+            className="trans-form sett-form"
           >
-            Export key recovery file
-          </button>
-        </div>
-
-        <div className="col-xs-4">
-          <button
-            className="btn btn-primary btn-sm"
-            style={{
-              marginTop: 30,
-
-              fontWeight: 500,
-              lineHeight: 2
-            }}
-            onClick={() => loadKeyRecovery(this.props.dispatch)}
-          >
-            Load key recovery file
-          </button>
+            <option selected="selected" disabled="disabled">
+              Select a saved Morpheus wallet to edit
+            </option>
+            {_.map(this.props.wallets, (value, key) => (
+              <option value={value}>{key.slice(0, 20)}</option>
+            ))}
+          </select>
         </div>
       </div>
-
-      <div className="icon-bar">
-        <Link to="/create">
-          <div className="icon-cell">
-            <div className="new-icon" />
-            Create New Wallet
-          </div>
-        </Link>
-        <Link to="/LoginLocalStorage">
-          <div className="icon-cell">
-            <div className="lock-icon" />
-            Login With Saved Wallet
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="icon-cell">
-            <div className="lock-icon" />
-            Login Using Private Key
-          </div>
-        </Link>
+    </div>
+    <div className="col-xs-3">
+    </div>
+    </div>
+    <div className="row top-20">
+    <div className="col-xs-2 col-xs-offset-1 center">
+    <div className="dash-icon-bar" onClick={() => print()} >
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-print" />
       </div>
+      Print Paper Wallet
+    </div>
+    </div>
+    <div className="col-xs-2 center">
+    <Link to="/encryptKey"><div className="dash-icon-bar">
+    <div className="icon-border">
+      <span className="glyphicon glyphicon-qrcode" />
+    </div>
+    Encrypt a Private Key
+    </div></Link>
+  </div>
+    <div className="col-xs-2 center">
+    <div className="dash-icon-bar" onClick={() => saveKeyRecovery(this.props.wallets)} >
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-arrow-down" />
+      </div>
+      Export Encrypted Keys
+    </div>
+    </div>
+    <div className="col-xs-2 center">
+    <div className="dash-icon-bar">
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-link" />
+      </div>
+      View On Blockchain
+    </div>
+    </div>
+    <div className="col-xs-2 center">
+    <div className="dash-icon-bar" onClick={() => deleteWallet(this.props.dispatch, key)} >
+      <div className="icon-border">
+        <span className="glyphicon glyphicon-trash" />
+      </div>
+      Delete Seleted Wallet
+    </div>
+    </div>
+    </div>
+    <div className="clearboth"></div>
+    </div>
+<div className="clearboth"></div>
     </div>
   );
 }
 
 const mapStateToProps = state => ({
   explorer: state.metadata.blockExplorer,
-  wallets: state.account.accountKeys
+  wallets: state.account.accountKeys,
+  blockHeight: state.metadata.blockHeight,
+  address: state.account.address,
+  net: state.metadata.network,
+  neo: state.wallet.Neo,
+  gas: state.wallet.Gas,
+  transactions: state.wallet.transactions
 });
 
 Settings = connect(mapStateToProps)(Settings);

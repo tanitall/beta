@@ -138,7 +138,7 @@ class NetworkSwitch extends Component {
 
   render = () => (
     <div id="network">
-      <span className="transparent">Running on</span>
+      <span className="transparent">Running on </span>
       <span
         className="netName"
         onClick={() =>

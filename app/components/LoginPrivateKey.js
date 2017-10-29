@@ -96,7 +96,7 @@ let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
               </div>
 
               <div
-                className="go-icon"
+                className="go-icon fadeInLeft"
                 onClick={e => onWifChange(dispatch, history, wif)}
               />
             </div>
@@ -123,7 +123,7 @@ let LoginPrivateKey = ({ dispatch, loggedIn, wif, history }) => (
         </div>
       </Link>
 
-      <Link to="/">
+      <Link to="/LoginNep2">
       <div className="dash-icon-bar">
         <div className="icon-border">
           <span className="glyphicon glyphicon-lock"></span>
