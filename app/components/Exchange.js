@@ -33,6 +33,9 @@ class Exchange extends Component {
       return (
         <div id="accountInfo" style={{ width: "75%" }}>
           <webview id="foo" disableguestresize  src="https://changelly.com/widget/v1?auth=email&from=BTC&to=NEO&merchant_id=cdc0b166b122&address={this.props.address}&amount=1&ref_id=cdc0b166b122&color=292530"></webview>
+          <div className="loading-exchange">
+          <span className="glyphicon glyphicon-refresh rotating" />
+          </div>
           </div>
       );
     } else {
