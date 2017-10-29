@@ -146,13 +146,8 @@ class Settings extends Component {
       </div>
       </div>
       <div className="col-xs-2 center">
-      <div className="dash-icon-bar">
-      <div className="icon-border">
-        <span className="glyphicon glyphicon-education" />
-      </div>
       <NetworkSwitch />
       </div>
-    </div>
   <div className="col-xs-2 center">
   <Link to="/create"><div className="dash-icon-bar">
   <div className="icon-border">
