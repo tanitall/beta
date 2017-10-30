@@ -267,7 +267,7 @@ class DisplayWalletKeys extends Component {
           </div>
         </Link>
 
-        <Link to="/">
+        <Link to="/LoginNep2">
           <div className="dash-icon-bar">
             <div className="icon-border">
               <span className="glyphicon glyphicon-lock" />

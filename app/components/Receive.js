@@ -40,30 +40,30 @@ class Receive extends Component {
             <p className="address">{this.props.address}</p>
             <p className="info">Send NEO or GAS to this address ONLY.</p>
 
-            <div
-              className="dash-bar-rec top-20"
-              onClick={() => clipboard.writeText(this.props.address)}
-            >
-              <div className="dash-icon-bar">
+            <div className="dash-bar-rec top-20">
+              <div
+                className="dash-icon-bar"
+                onClick={() => clipboard.writeText(this.props.address)}
+              >
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-duplicate" />
                 </div>
                 Copy Public Address
               </div>
-            </div>
 
-            <div className="dash-icon-bar">
-              <div className="icon-border">
-                <span className="glyphicon glyphicon-print" />
+              <div className="dash-icon-bar" onClick={() => print()}>
+                <div className="icon-border">
+                  <span className="glyphicon glyphicon-print" />
+                </div>
+                Print Paper Wallet
               </div>
-              Print Paper Wallet
-            </div>
 
-            <div className="dash-icon-bar">
-              <div className="icon-border">
-                <span className="glyphicon glyphicon-link" />
+              <div className="dash-icon-bar">
+                <div className="icon-border">
+                  <span className="glyphicon glyphicon-link" />
+                </div>
+                View On Blockchain
               </div>
-              View On Blockchain
             </div>
           </div>
         </div>

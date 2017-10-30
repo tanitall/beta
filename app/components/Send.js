@@ -172,133 +172,69 @@ let Send = ({
         <div className="row send-neo">
           <div id="sendAddress">
             <div className="clearboth" />
+
             <div id="sendAmount">
               <div className="col-xs-6">
-                <img
-                  src={neoLogo}
-                  alt=""
-                  width="48"
-                  className="neo-logo logobounce"
+                <input
+                  className={formClass}
+                  type="number"
+                  id="sendAmount"
+                  placeholder="Enter amount to send"
+                  ref={node => {
+                    sendAmount = node;
+                  }}
                 />
-                <h2>Send Neo/Gas</h2>
               </div>
               <div className="col-xs-4">
-                <div id="sendAddress">
-                  <div className="btn-sm">MIN</div>
-                  <div className="btn-sm">HALF</div>
-                  <div className="btn-sm">MAX</div>
-                </div>
+                <input
+                  className={formClass}
+                  id="sendAmount"
+                  type="number"
+                  disabled
+                  placeholder="Amount in US"
+                  ref={node => {
+                    sendAmount = node;
+                  }}
+                />
+                <label className="amount-dollar">$</label>
               </div>
               <div className="col-xs-2">
-                <div
-                  id="sendAsset"
-                  className={btnClass}
-                  style={{ width: "100%" }}
-                  data-tip
-                  data-for="assetTip"
-                  onClick={() => dispatch(toggleAsset())}
-                >
-                  {selectedAsset}
-                </div>
-                <ReactTooltip
-                  class="solidTip"
-                  id="assetTip"
-                  place="bottom"
-                  type="dark"
-                  effect="solid"
-                >
-                  <span>Click To Switch</span>
-                </ReactTooltip>
-              </div>
-              <div className="clearboth" />
-              <div className="glyphicon glyphicon-camera scanqr-cam" />
-              <div id="sendAddress">
-                <div className="col-xs-12">
-                  <input
-                    className={formClass}
-                    id="center"
-                    placeholder="Enter a valid NEO public address"
-                    ref={node => {
-                      sendAddress = node;
-                    }}
-                  />
-                </div>
-
-                <div className="clearboth" />
-
-                <div id="sendAmount">
-                  <div className="col-xs-6">
-                    <input
-                      className={formClass}
-                      type="number"
-                      id="sendAmount"
-                      placeholder="Enter amount to send"
-                      ref={node => {
-                        sendAmount = node;
-                      }}
-                    />
-                  </div>
-                  <div className="col-xs-4">
-                    <input
-                      className={formClass}
-                      id="sendAmount"
-                      type="number"
-                      disabled
-                      placeholder="Amount in US"
-                      ref={node => {
-                        sendAmount = node;
-                      }}
-                    />
-                    <label className="amount-dollar">$</label>
-                  </div>
-                  <div className="col-xs-2">
-                    <div id="sendAddress">
-                      <button
-                        id="doSend"
-                        style={{ width: "100%" }}
-                        className="btn-send"
-                        onClick={() =>
-                          openAndValidate(dispatch, neo, gas, selectedAsset)}
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </div>
+                <div id="sendAddress">
+                  <button
+                    id="doSend"
+                    style={{ width: "100%" }}
+                    className="btn-send"
+                    onClick={() =>
+                      openAndValidate(dispatch, neo, gas, selectedAsset)}
+                  >
+                    Send
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            id="confirmPane"
-            onClick={() =>
-              sendTransaction(
-                dispatch,
-                net,
-                address,
-                wif,
-                selectedAsset,
-                neo,
-                gas
-              )}
-          >
-            <button
-              ref={node => {
-                confirmButton = node;
-              }}
-            >
-              Confirm Transaction
-            </button>
-          </div>
-
-          <div className="send-notice">
-            <p>
-              All NEO and GAS transactions are free. Only send NEO and GAS to a
-              valid NEO address. Sending to an address other than a NEO address
-              can result in your NEO/GAS being lost. You cannot send a fraction
-              of a NEO.
-            </p>
-          </div>
         </div>
+      </div>
+      <div
+        id="confirmPane"
+        onClick={() =>
+          sendTransaction(dispatch, net, address, wif, selectedAsset, neo, gas)}
+      >
+        <button
+          ref={node => {
+            confirmButton = node;
+          }}
+        >
+          Confirm Transaction
+        </button>
+      </div>
+      <div className="send-notice">
+        <p>
+          All NEO and GAS transactions are free. Only send NEO and GAS to a
+          valid NEO address. Sending to an address other than a NEO address can
+          result in your NEO/GAS being lost. You cannot send a fraction of a
+          NEO.
+        </p>
       </div>
     </div>
   );
