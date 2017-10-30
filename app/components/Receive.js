@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import QRCode from "qrcode.react";
+import { clipboard } from "electron";
 import neoLogo from "../images/neo.png";
 import copyIcon from "../images/copy-icon.png";
 import printIcon from "../images/print-icon.png";
@@ -39,14 +40,16 @@ class Receive extends Component {
             <p className="address">{this.props.address}</p>
             <p className="info">Send NEO or GAS to this address ONLY.</p>
 
-            <div className="dash-bar-rec top-20">
+            <div
+              className="dash-bar-rec top-20"
+              onClick={() => clipboard.writeText(this.props.address)}
+            >
               <div className="dash-icon-bar">
                 <div className="icon-border">
                   <span className="glyphicon glyphicon-duplicate" />
                 </div>
                 Copy Public Address
               </div>
-              Copy Public Address
             </div>
 
             <div className="dash-icon-bar">

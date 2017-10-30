@@ -112,11 +112,17 @@ class LoginLocalStorage extends Component {
                         className="trans-form"
                         ref={node => (wif_input = node)}
                       >
-                        <option selected="selected" disabled="disabled">
+                        <option
+                          defaultValue
+                          selected="selected"
+                          disabled="disabled"
+                        >
                           Select a saved wallet
                         </option>
                         {_.map(this.props.accountKeys, (value, key) => (
-                          <option value={value}>{key}</option>
+                          <option key={Math.random()} value={value}>
+                            {key}
+                          </option>
                         ))}
                       </select>
                     </div>

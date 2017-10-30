@@ -88,8 +88,17 @@ const sendTransaction = (
       .then(response => {
         if (response.result === undefined || response.result === false) {
           dispatch(sendEvent(false, "Transaction failed!"));
+          console.log("Transaction failed!");
+          alert("Transaction failed!");
         } else {
           console.log(response.result);
+          alert(
+            "Transaction complete! Your balance will automatically update when the blockchain has processed it."
+          );
+          alert(
+            "Transaction complete! Your balance will automatically update when the blockchain has processed it."
+          );
+
           dispatch(
             sendEvent(
               true,
@@ -101,6 +110,7 @@ const sendTransaction = (
       })
       .catch(e => {
         dispatch(sendEvent(false, "Transaction failed!"));
+        console.log("Transaction failed!");
         setTimeout(() => dispatch(clearTransactionEvent()), 5000);
       });
   }
@@ -160,60 +170,8 @@ let Send = ({
         </div>
 
         <div className="row send-neo">
-          <div className="col-xs-6">
-            <img
-              src={neoLogo}
-              alt=""
-              width="48"
-              className="neo-logo logobounce"
-            />
-            <h2>Send Neo/Gas</h2>
-          </div>
-          <div className="col-xs-4">
-            <div id="sendAddress">
-              <div className="btn-sm blue">MIN</div>
-              <div className="btn-sm blue">HALF</div>
-              <div className="btn-sm blue">MAX</div>
-            </div>
-          </div>
-          <div className="col-xs-2">
-            <div
-              id="sendAsset"
-              className={btnClass}
-              style={{ width: "100%" }}
-              data-tip
-              //data-for="assetTip"
-              onClick={() => dispatch(toggleAsset())}
-            >
-              {selectedAsset}
-            </div>
-            <ReactTooltip
-              className="solidTip"
-              id="assetTip"
-              place="bottom"
-              type="dark"
-              effect="solid"
-            >
-              <span>Click To Switch</span>
-            </ReactTooltip>
-            {/* <p>Tap To Switch</p> */}
-          </div>
-          <div className="clearboth" />
-          <div className="glyphicon glyphicon-camera scanqr-cam" />
           <div id="sendAddress">
-            <div className="col-xs-12">
-              <input
-                className={formClass}
-                id="center"
-                placeholder="Enter a valid NEO public address"
-                ref={node => {
-                  sendAddress = node;
-                }}
-              />
-            </div>
-
             <div className="clearboth" />
-
             <div id="sendAmount">
               <div className="col-xs-6">
                 <img
@@ -237,7 +195,7 @@ let Send = ({
                   className={btnClass}
                   style={{ width: "100%" }}
                   data-tip
-                  //data-for="assetTip"
+                  data-for="assetTip"
                   onClick={() => dispatch(toggleAsset())}
                 >
                   {selectedAsset}
@@ -251,7 +209,6 @@ let Send = ({
                 >
                   <span>Click To Switch</span>
                 </ReactTooltip>
-                {/* <p>Tap To Switch</p> */}
               </div>
               <div className="clearboth" />
               <div className="glyphicon glyphicon-camera scanqr-cam" />
@@ -286,6 +243,7 @@ let Send = ({
                       className={formClass}
                       id="sendAmount"
                       type="number"
+                      disabled
                       placeholder="Amount in US"
                       ref={node => {
                         sendAmount = node;
@@ -323,13 +281,13 @@ let Send = ({
                 gas
               )}
           >
-            {/* <button
-          ref={node => {
-            confirmButton = node;
-          }}
-        >
-          Confirm Transaction
-        </button> */}
+            <button
+              ref={node => {
+                confirmButton = node;
+              }}
+            >
+              Confirm Transaction
+            </button>
           </div>
 
           <div className="send-notice">

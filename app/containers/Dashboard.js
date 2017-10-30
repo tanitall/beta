@@ -58,7 +58,6 @@ class Dashboard extends Component {
     if (this.props.location.pathname !== "/dashboard") {
       dash = <div />;
     }
-    console.log(this.props.location);
     return (
       <div>
         <div id="mainNav" className="main-nav">
