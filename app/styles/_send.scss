@@ -198,13 +198,19 @@ webview {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+        background-color: #fff;
+        width: .8em
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+        background:  black
 }
 
 .loading-exchange {
   position: fixed;
-      top: 34%;
-      left: 55%;
+      top: 35%;
+      left: 54%;
       font-size: 120px;
       text-align: center;
       width: 120px;
@@ -247,4 +253,21 @@ webview {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+}
+
+#neo-price {
+  -webkit-padding-start: 0px;
+  font-size: 18px;
+}
+
+#neo-price li {
+  width: 20%;
+  float: left;
+  padding: 0px;
+}
+
+#gas-price li {
+  width: 20%;
+  float: left;
+  padding: 0px;
 }
