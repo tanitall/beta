@@ -14,7 +14,7 @@ Features available in this beta release
 - Encrypt private key and save address to Morpheus
 - Send NEO/GAS on TestNet
 - Receive NEO/GAS on TestNet
-- View Transaction History
+- View Transaction History (NeoTracker.io TestNet is down)
 
 
 ## License
