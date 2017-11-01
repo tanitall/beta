@@ -4,11 +4,18 @@
 
 # Beta Releases
 
-[Mac OSX V.0.0.35]
- - Stable on Live network
- - DO NOT SEND NEO
- - FOR INTERNAL DEMO USE ONLY
- - Charts not activated
+Features available in this beta release
+
+- Create new NEO address
+- View private data
+- Save address to Morpheus
+- Login via encrypted private key and password
+- Login via private key
+- Encrypt private key and save address to Morpheus
+- Send NEO/GAS on TestNet
+- Receive NEO/GAS on TestNet
+- View Transaction History
+
 
 ## License
 
