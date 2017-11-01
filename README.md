@@ -16,6 +16,8 @@ Features available in this beta release
 - Receive NEO/GAS on TestNet
 - View Transaction History (NeoTracker.io TestNet is down)
 
+Please refer to the [Morpheus Beta Wiki](https://github.com/MorpheusWallet/beta/wiki) for more info
+
 
 ## License
 
