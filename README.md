@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Credit
 
-This application is product of Blockchain Services Limited (Trinidad and Tobago). A Limited Liability Company registred in the Republic of Trinidad and Tobago. Company registration number C2017081006407.
+This software is a product of Blockchain Services Limited (Trinidad and Tobago). A Limited Liability Company registred in the Republic of Trinidad and Tobago. Company registration number C2017081006407.
 
  - Creator, Designer, Co-Developer: Aaron Besson
  - Lead Developer: Krs Joseph
