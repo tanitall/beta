@@ -1,6 +1,6 @@
 # Morpheus Wallet Beta Release
 
-*(Use with caution. This software is currently under development.)*
+The purpose of participating in this beta software program is providing feedback on the quality and usability of the Morpheus Wallet. You understand and agree that participation in the beta testing program is voluntary and Morpheus is not liable for any loss or damage. The beta software focuses on core functionality and some features may not be activated. If you encounter any problems please report them in our Slack channel.
 
 # Beta Releases
 
