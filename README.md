@@ -21,8 +21,7 @@ Please refer to the [Morpheus Beta Wiki](https://github.com/MorpheusWallet/beta/
 
 ## License
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the [GNU Affero General Public License](https://github.com/MorpheusWallet/Morpheus/blob/master/LICENSE.md) as published
+This program is free software: you can redistribute it under the terms of the [GNU Affero General Public License](https://github.com/MorpheusWallet/beta/blob/master/License.md) as published
 by the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
