@@ -6,6 +6,7 @@ The purpose of participating in this beta software program is providing feedback
 
 Features available in this beta release
 
+- Beta version 0.0.37 is on the NEO Test Network
 - Create new NEO address
 - View private data
 - Save address to Morpheus
