@@ -2,7 +2,7 @@
 
 The purpose of participating in this beta software program is providing feedback on the quality and usability of the Morpheus Wallet. You understand and agree that participation in the beta testing program is voluntary and Morpheus is not liable for any loss or damage. The beta software focuses on core functionality and some features may not be activated. If you encounter any problems please report them in our Slack channel.
 
-<img width="1018" alt="screen shot 2017-11-01 at 9 57 05 pm" src="https://user-images.githubusercontent.com/13420186/32306059-a35e8350-bf4f-11e7-9bc5-d99c0237d624.png">
+![welcome](https://user-images.githubusercontent.com/13420186/32306119-eeee1a6a-bf4f-11e7-8e92-9c17d4813c67.png)
 
 # Beta Releases
 
