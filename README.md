@@ -47,7 +47,7 @@ _____
   - Node (This project uses the current LTS node version, which is `v6.11.0`)
   - Yarn (https://yarnpkg.com/lang/en/docs/install/)
 
-## Developing and Running via Terminal (Developers only)
+## Running via Terminal (Developers only)
 
 Execute these commands in the project's root directory:
 
