@@ -29,7 +29,7 @@ You should have received a copy of the GNU Affero General Public License along w
 
 ## Credit
 
-This software is a product of Blockchain Services Limited (Trinidad and Tobago). A Limited Liability Company registred in the Republic of Trinidad and Tobago. Company registration number C2017081006407.
+Morpheus Walelt is a product of Blockchain Services Limited (Trinidad and Tobago). A Limited Liability Company registred in the Republic of Trinidad and Tobago.
 
  - Creator, Designer, Co-Developer: [Aaron Besson](https://github.com/MorpheusAdministrator)
  - Lead Developer: [Krs Joseph](https://github.com/krsjoseph)
