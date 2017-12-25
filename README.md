@@ -1,4 +1,5 @@
-# Morpheus Wallet
+# Morpheus Wallet BETA
+## THIS IS BETA SOFTWARE LOCKED ON THE TEST NETOWRK FOR DEVELOPER USE ONLY
 
 Morpheus is an all-in-one blockchain asset manager
 
