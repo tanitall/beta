@@ -122,14 +122,7 @@ class LoginNep2 extends Component {
               </div>
             </Link>
             <div
-              className="dash-icon-bar"
-              onClick={() => loadKeyRecovery(this.props.dispatch)}
-            >
-              <div className="icon-border">
-                <span className="glyphicon glyphicon-paperclip" />
-              </div>
-              Login Via Recovery File
-            </div>
+
           </div>
         </div>
       </div>
