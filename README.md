@@ -54,7 +54,6 @@ Execute these commands in the project's root directory:
 
 _____
 
-*(This document may change without notice.)*
-
 Morpheus is a blockchain asset manager for NEO and other cryptocurrencies.
-Copyright (C) 2017 Blockchain Services Limited (Trinidad and Tobago).
+Copyright (C) Aaron Besson.
+*(This document may change without notice.)*
