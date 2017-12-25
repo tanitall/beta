@@ -121,7 +121,6 @@ class LoginNep2 extends Component {
                 Login Via Private Key
               </div>
             </Link>
-            <div
 
           </div>
         </div>
