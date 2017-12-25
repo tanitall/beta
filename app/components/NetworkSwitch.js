@@ -154,10 +154,7 @@ class NetworkSwitch extends Component {
   };
   render = () => (
     <div
-      id="network"
-      onClick={() =>
-        toggleNet(this.props.dispatch, this.props.net, this.props.address)
-      }
+      
     >
       <div className="dash-icon-bar">
         <div className="icon-border">
