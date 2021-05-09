@@ -68,7 +68,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jayson": "^2.0.1",
     "js-scrypt": "^0.2.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "moment": "^2.19.1",
     "neon-js": "git+https://github.com/CityOfZion/neon-js.git#e1cc32b710cd71e0cf12b3172a0bade3af813c1b",
     "numeral": "^2.0.6",
